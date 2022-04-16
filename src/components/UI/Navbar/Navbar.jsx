@@ -2,7 +2,7 @@ import './Navbar.css';
 import './Navbar-media.css';
 import logo from '../../../assets/img/logo.jpg';
 
-function Navbar() {
+export const Navbar = () => {
   return (
     <header className="head-section">
     <div className="navbar navbar-default navbar-static-top container">
@@ -48,5 +48,3 @@ function Navbar() {
   </header>
   )
 }
-
-export default Navbar
