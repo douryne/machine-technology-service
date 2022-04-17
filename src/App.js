@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { MainPage } from './pages';
-import { Navbar } from './components';
+import { Navbar, Footer } from './components';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <Routes>
           <Route path='/' element={<MainPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
