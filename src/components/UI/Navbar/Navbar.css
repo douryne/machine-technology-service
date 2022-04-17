@@ -43,9 +43,8 @@ head-section {
 }
 
 .navbar-brand img {
-  max-width: 250px;
-  width: 100%;
-  height: 110px;
+  width: 200px;
+  height: 150px;
   border-radius: 20px;
 }
 
@@ -115,8 +114,7 @@ ul.dropdown-menu {
 }
 
 .head-section .navbar-nav>li {
-  padding-bottom: 25px;
-  padding-top: 30px;
+  padding: 15px 0;
 }
 
 .head-section ul.navbar-nav li:last-child() {
