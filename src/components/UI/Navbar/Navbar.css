@@ -10,6 +10,29 @@ head-section {
   border: none
 }
 
+.navbar-toggle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border-color: gainsboro;
+  margin: 30px 0 0 0 !important;
+  padding: 0 !important;
+  transition: background-color .2s ease-in-out;
+}
+
+.navbar-toggle:hover {
+  background-color: #eee !important;
+}
+
+.navbar-toggle .icon-bar {
+  height: 3px !important;
+  border-radius: 5px !important;
+}
+
 .navbar-brand {
   color: #bcc0cd;
   font-size: 30px;
@@ -155,17 +178,25 @@ ul.dropdown-menu {
   position: fixed;
   z-index: 10;
   top: 0px;
-  left: 47%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#lang ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
 #lang li {
-  display: inline;
+  width: 35px;
+  margin: 0 5px;
 }
 
 #lang a {
   display: block;
   height: 25px;
-  width: 35px;
+  width: 100%;
   float: left;
   margin-right: 4px;
 }
