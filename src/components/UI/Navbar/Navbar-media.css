@@ -1,7 +1,6 @@
 @media (max-width: 768px) {
 
   .head-section .navbar-collapse  ul.navbar-nav {
-      float: none;
       margin-left: 0;
   }
 
@@ -12,11 +11,6 @@
   .head-section .nav li.active a,
   .head-section .dropdown-menu li a:hover {
       color: #fff !important;
-  }
-
-  .head-section .navbar-nav > li {
-      padding: 0;
-      margin-bottom: 2px;
   }
 
   .head-section .nav li ul.dropdown-menu li a {

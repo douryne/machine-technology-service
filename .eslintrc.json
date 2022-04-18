@@ -37,6 +37,7 @@
         "arrow-body-style": "off",
         "react/function-component-definition": "off",
         "react/jsx-filename-extension": "off",
-        "linebreak-style": "off"
+        "linebreak-style": "off",
+        "react/prop-types": "off"
     }
 }

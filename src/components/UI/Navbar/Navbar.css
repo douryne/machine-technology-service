@@ -171,6 +171,10 @@ ul.dropdown-menu {
   border-bottom: 1px solid #F3E8E8;
 }
 
+.dropdown {
+  text-align: center;
+}
+
 #lang {
   height: 25px;
   position: fixed;

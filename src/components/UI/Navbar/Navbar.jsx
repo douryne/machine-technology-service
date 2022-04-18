@@ -1,14 +1,46 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import './Navbar-media.css';
 import logo from '../../../assets/img/logo.jpg';
+import { BurgerMenu } from '../BurgerMenu/BurgerMenu';
 
 export const Navbar = () => {
+  const navList = [
+    { title: 'Главная', href: 'index.html' },
+    { title: 'Портфолио', href: 'folio.html' },
+    { title: 'Оборудование завода', href: 'equipment.html' },
+    { title: 'Применение', href: 'practise.html' },
+    { title: 'Наши референсы', href: 'info.html' },
+    { title: 'Контакты', href: 'contact.html' },
+  ];
+
+  const menuMinScreenWidth = 768;
+  const [visible, setVisible] = useState(false);
+
+  const handleWindowResize = () => {
+    const { innerWidth: windowWidth } = window;
+    if (windowWidth <= menuMinScreenWidth) return;
+    setVisible(false);
+  };
+
+  useEffect(() => {
+    window.top.addEventListener('resize', handleWindowResize);
+    return () => {
+      return window.removeEventListener('load', handleWindowResize);
+    };
+  }, []);
+
   return (
     <header className='head-section'>
       <div className='navbar navbar-default navbar-static-top container'>
         <div className='navbar-header'>
-          <button className='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+          <button
+            className='navbar-toggle'
+            onClick={() => {
+              setVisible(true);
+            }}
+            type='button'
+          >
             <span className='icon-bar' />
             <span className='icon-bar' />
             <span className='icon-bar' />
@@ -31,36 +63,17 @@ export const Navbar = () => {
           </ul>
         </div>
 
+        <BurgerMenu elements={navList} visible={visible} setVisible={() => setVisible(false)} />
+
         <div className='navbar-collapse collapse'>
           <ul className='nav navbar-nav'>
-            <li className='dropdown'>
-              <a className='dropdown-toggle' href='index.html'>
-                Главная
-              </a>
-            </li>
-            <li className='dropdown'>
-              <a className='dropdown-toggle' href='folio.html'>
-                Портфолио
-              </a>
-            </li>
-            <li className='dropdown'>
-              <a className='dropdown-toggle' href='equipment.html'>
-                Оборудование завода
-              </a>
-            </li>
-            <li className='dropdown'>
-              <a className='dropdown-toggle' href='practice.html'>
-                Применение
-              </a>
-            </li>
-            <li className='dropdown'>
-              <a className='dropdown-toggle' href='info.html'>
-                Наши референсы
-              </a>
-            </li>
-            <li>
-              <a href='contact.html'>Контакты</a>
-            </li>
+            {navList.map((navLink) => (
+              <li key={navLink.href} className='dropdown'>
+                <a className='dropdown-toggle' href={navLink.href}>
+                  {navLink.title}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
