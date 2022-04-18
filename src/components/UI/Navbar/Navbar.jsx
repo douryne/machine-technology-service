@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import './Navbar.css';
-import './Navbar-media.css';
+import React, { useState } from 'react';
 import logo from '../../../assets/img/logo.jpg';
 import { BurgerMenu } from '../BurgerMenu/BurgerMenu';
+import { useAutoCloseSidebar } from '../../../hooks/useAutoCloseSidebar';
+
+import './Navbar.css';
+import './Navbar-media.css';
 
 export const Navbar = () => {
   const navList = [
@@ -17,18 +19,7 @@ export const Navbar = () => {
   const menuMinScreenWidth = 768;
   const [visible, setVisible] = useState(false);
 
-  const handleWindowResize = () => {
-    const { innerWidth: windowWidth } = window;
-    if (windowWidth <= menuMinScreenWidth) return;
-    setVisible(false);
-  };
-
-  useEffect(() => {
-    window.top.addEventListener('resize', handleWindowResize);
-    return () => {
-      return window.removeEventListener('load', handleWindowResize);
-    };
-  }, []);
+  useAutoCloseSidebar(menuMinScreenWidth, () => setVisible(false));
 
   return (
     <header className='head-section'>
