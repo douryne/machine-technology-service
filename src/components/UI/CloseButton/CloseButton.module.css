@@ -1,0 +1,21 @@
+.removeBtn {
+  border: 1px solid #000122;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000122;
+  background-color: transparent;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.removeBtn::after {
+  content: '✖';
+}
+
+.removeBtn:hover {
+  background-color: #000122;
+  color: white;
+}
