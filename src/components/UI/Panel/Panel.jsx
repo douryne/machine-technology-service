@@ -1,25 +1,13 @@
 import React, { useState } from 'react';
-import Slider from 'react-slick/lib/slider';
+import { useLocation } from 'react-router-dom';
+import { SliderItem } from '../Slider/SliderItem';
 
 import './Panel.css';
 
-import img1 from '../../../assets/img/slider/1.jpg';
-import img2 from '../../../assets/img/slider/2.jpg';
-import img3 from '../../../assets/img/slider/3.jpg';
-import img4 from '../../../assets/img/slider/4.jpg';
-import img5 from '../../../assets/img/slider/5.jpg';
-import img6 from '../../../assets/img/slider/6.jpg';
-
 export const Panel = ({ children }) => {
-  const [open, setOpen] = useState(true);
+  const portfolio = useLocation();
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  const [open, setOpen] = useState(true);
 
   return (
     <div className='panel panel-default'>
@@ -28,26 +16,7 @@ export const Panel = ({ children }) => {
       </button>
 
       <div id='collapseThirty' className={open ? 'panel-collapse collapse' : 'panel-collapse collapse in'}>
-        <Slider {...settings}>
-          <div>
-            <img src={img1} alt='' />
-          </div>
-          <div>
-            <img src={img2} alt='' />
-          </div>
-          <div>
-            <img src={img3} alt='' />
-          </div>
-          <div>
-            <img src={img4} alt='' />
-          </div>
-          <div>
-            <img src={img5} alt='' />
-          </div>
-          <div>
-            <img src={img6} alt='' />
-          </div>
-        </Slider>
+        {portfolio.pathname === '/portfolio' && <SliderItem />}
       </div>
     </div>
   );

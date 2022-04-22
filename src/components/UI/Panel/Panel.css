@@ -86,13 +86,13 @@ button {
   background: #f5f5f5;
   text-align: left;
 }
-.slick-slide img {
-  max-width: 100%;
-  width: 100%;
-}
+
 .panel {
   border: 1px solid #f4f4f4 !important;
 }
 .panel-collapse {
   padding: 30px !important;
+}
+.panel-heading:focus-visible{
+  outline: none;
 }

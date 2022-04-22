@@ -1,0 +1,7 @@
+.slick-slide img {
+  max-width: 100%;
+  width: 100%;
+}
+.slick-next:before, .slick-prev:before{
+  color: #000 !important;
+}
