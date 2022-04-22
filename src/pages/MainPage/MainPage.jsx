@@ -1,7 +1,7 @@
 import './MainPage.css';
 import React from 'react';
-import { SphereSection } from '../../components';
+import { ProfEquipment } from '../../components/UI/ProfEquipment/ProfEquipment';
 
 export const MainPage = () => {
-  return <SphereSection />;
+  return <ProfEquipment />;
 };
