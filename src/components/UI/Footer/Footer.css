@@ -1,0 +1,38 @@
+.footer {
+  background: #34495e;
+  color: #fff;
+  padding: 50px 0;
+  display: inline-block;
+  width: 100%;
+  font-weight: 300;
+}
+
+.footer h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer address a {
+  color: orange
+}
+
+ul.page-footer-list {
+  padding: 0;
+  list-style: none;
+}
+
+ul.page-footer-list li {
+  line-height: 35px;
+  border-bottom: 1px dashed #636F79;
+}
+
+ul.page-footer-list a {
+  color: #fff
+}
+
+ul.page-footer-list li i {
+  padding-right: 10px
+}

@@ -1,10 +1,6 @@
 @media (max-width: 768px) {
-  .navbar-toggle {
-      margin-top: 30px;
-  }
 
   .head-section .navbar-collapse  ul.navbar-nav {
-      float: none;
       margin-left: 0;
   }
 
@@ -15,11 +11,6 @@
   .head-section .nav li.active a,
   .head-section .dropdown-menu li a:hover {
       color: #fff !important;
-  }
-
-  .head-section .navbar-nav > li {
-      padding: 0;
-      margin-bottom: 2px;
   }
 
   .head-section .nav li ul.dropdown-menu li a {
@@ -54,6 +45,12 @@
   .navbar-toggle {
       margin-right: -10px;
   }
+
+  .navbar-brand img {
+    width: 150px;
+    height: 110px;
+    border-radius: 20px;
+  }  
 
   .head-section .nav li .dropdown-menu li a:hover {
       color: #48C9B0 !important;
