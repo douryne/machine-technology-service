@@ -1,6 +1,7 @@
 import './MainPage.css';
 import React from 'react';
+import { SphereSection } from '../../components';
 
 export const MainPage = () => {
-  return <h1>MainPage</h1>;
+  return <SphereSection />;
 };
