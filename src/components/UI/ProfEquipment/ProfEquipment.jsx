@@ -23,7 +23,11 @@ export const ProfEquipment = () => {
         <hr className='equipment__list-line' />
         <ul className='equipment__list'>
           {texts.map((text) => {
-            return <li className='equipment__list-item'>{text}</li>;
+            return (
+              <li key={text} className='equipment__list-item'>
+                {text}
+              </li>
+            );
           })}
         </ul>
         <hr className='equipment__list-line' />
