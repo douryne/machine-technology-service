@@ -4,6 +4,22 @@ import { Panel, Title } from '../../components';
 import './MainPortfolio.css';
 
 export const MainPortfolio = () => {
+  const panelName = [
+    { id: 1, name: '"AKFA". НАМАНГАН' },
+    { id: 2, name: 'ЗАВОД "KNAUF" В ФЕРГАНЕ' },
+    { id: 3, name: 'АНГРЕН. БУНКЕР ДЛЯ МОЮЩИХ СТРЕДСТВ' },
+    { id: 4, name: 'VEKTAN CHEMICAL' },
+    { id: 5, name: 'IES "Uzbekgidroqurilish" В ФЕРГАНЕ' },
+    { id: 6, name: 'ТУРКЕСТАНСКИЙ АЭРОПОРТ "YDA" В КАЗАХСТАНЕ' },
+    { id: 7, name: 'CП ООО "HIGN LAND CITY"(AKFA GROUP)' },
+    { id: 8, name: 'ООО "GREEN LINE PROFIL" (BENKAM)' },
+    { id: 9, name: 'ИП OOO "METAL INVENT"(ORIENT GROUP)' },
+    { id: 10, name: 'СП ООО "STARGATE SYSTEMS"(AKFA GROUP)' },
+    { id: 12, name: 'АО "UZBEKGIDROENERGOQURILISH"' },
+    { id: 13, name: 'КОМПАНИЯ-ЗАКАЗЧИК "SOFYA STROY". ЁМКОСТИ ДЛЯ КОМПАНИИ "ЛУКОЙЛ"' },
+    { id: 14, name: 'АО «NAVOIYAZOT» - ПРОИЗВОДИТЕЛЬ ХИМПРОДУКЦИИ' },
+  ];
+
   return (
     <div>
       <Title>НАШЕ ПОРТФОЛИО</Title>
@@ -11,19 +27,9 @@ export const MainPortfolio = () => {
         <div className='col-md-12'>
           <div className='container'>
             <div className='panel-group wow fadeInUp animated'>
-              <Panel>&quot;AKFA&quot;. НАМАНГАН</Panel>
-              <Panel>ЗАВОД &quot;KNAUF&quot; В ФЕРГАНЕ</Panel>
-              <Panel>АНГРЕН. БУНКЕР ДЛЯ МОЮЩИХ СТРЕДСТВ</Panel>
-              <Panel>VEKTAN CHEMICAL</Panel>
-              <Panel>IES &quot;Uzbekgidroqurilish&quot; В ФЕРГАНЕ</Panel>
-              <Panel>ТУРКЕСТАНСКИЙ АЭРОПОРТ &quot;YDA&quot; В КАЗАХСТАНЕ</Panel>
-              <Panel>CП ООО &quot;HIGN LAND CITY&quot;(AKFA GROUP)</Panel>
-              <Panel>ООО &quot;GREEN LINE PROFIL&quot; (BENKAM)</Panel>
-              <Panel>ИП OOO &quot;METAL INVENT&quot;(ORIENT GROUP)</Panel>
-              <Panel>СП ООО &quot;STARGATE SYSTEMS&quot;(AKFA GROUP)</Panel>
-              <Panel>АО &quot;UZBEKGIDROENERGOQURILISH&quot; </Panel>
-              <Panel>КОМПАНИЯ-ЗАКАЗЧИК &quot;SOFYA STROY&quot;. ЁМКОСТИ ДЛЯ КОМПАНИИ &quot;ЛУКОЙЛ&quot;</Panel>
-              <Panel>АО «NAVOIYAZOT» - ПРОИЗВОДИТЕЛЬ ХИМПРОДУКЦИИ</Panel>
+              {panelName.map((name) => (
+                <Panel>{name.name}</Panel>
+              ))}
             </div>
           </div>
         </div>

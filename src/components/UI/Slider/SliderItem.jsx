@@ -11,6 +11,33 @@ import img5 from '../../../assets/img/slider/5.jpg';
 import img6 from '../../../assets/img/slider/6.jpg';
 
 export const SliderItem = () => {
+  const imageList = [
+    {
+      id: 1,
+      img: img1,
+    },
+    {
+      id: 2,
+      img: img2,
+    },
+    {
+      id: 3,
+      img: img3,
+    },
+    {
+      id: 4,
+      img: img4,
+    },
+    {
+      id: 5,
+      img: img5,
+    },
+    {
+      id: 6,
+      img: img6,
+    },
+  ];
+
   const settings = {
     dots: true,
     infinite: true,
@@ -21,24 +48,11 @@ export const SliderItem = () => {
 
   return (
     <Slider {...settings}>
-      <div>
-        <img src={img1} alt='' />
-      </div>
-      <div>
-        <img src={img2} alt='' />
-      </div>
-      <div>
-        <img src={img3} alt='' />
-      </div>
-      <div>
-        <img src={img4} alt='' />
-      </div>
-      <div>
-        <img src={img5} alt='' />
-      </div>
-      <div>
-        <img src={img6} alt='' />
-      </div>
+      {imageList.map((img) => (
+        <div key={img.id}>
+          <img src={img.img} alt='' />
+        </div>
+      ))}
     </Slider>
   );
 };
