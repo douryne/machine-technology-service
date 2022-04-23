@@ -1,0 +1,72 @@
+.sphere-section {
+  background-color: hsl(0, 0%, 95%);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 100px;
+}
+
+.sphere-section__title {
+  color: #8a8b8b;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.sphere-section ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+  padding: 0;
+}
+
+.sphere-section li article {
+  flex-direction: row-reverse;
+  max-width: none;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.sphere-section li img {
+  width: 100px;
+  height: 100px;
+}
+
+.sphere-section li h1, 
+.sphere-section li h2,
+.sphere-section li h3,
+.sphere-section li h4,
+.sphere-section li h5,
+.sphere-section li h6 {
+  text-align: left;
+  color: #475168;
+  font-weight: 400;
+}
+
+
+.sphere-section li p {
+  text-align: left;
+}
+
+.sphere-section li a {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sphere-section ul {
+      grid-template-columns: 1fr;
+  }
+  .sphere-section li article {
+    justify-content: center;
+  }
+  .sphere-section ul h1, 
+  .sphere-section li h2,
+  .sphere-section li h3,
+  .sphere-section li h4,
+  .sphere-section li h5,
+  .sphere-section li h6,
+  .sphere-section li p {
+    text-align: center;
+  }
+}

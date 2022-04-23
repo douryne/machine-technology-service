@@ -6,8 +6,10 @@ export const SphereCard = ({ cardUrl, cardTitle, cardText, cardRoute }) => {
   return (
     <article className='sphereCard'>
       <img src={cardUrl} alt={cardTitle} className='sphereCard__image' />
-      <h3 className='sphereCard__title'>{cardTitle}</h3>
-      <p className='sphereCard__text'>{cardText}</p>
+      <div>
+        <h3 className='sphereCard__title'>{cardTitle}</h3>
+        <p className='sphereCard__text'>{cardText}</p>
+      </div>
       <Link to={cardRoute} className='sphereCard__link'>
         подробнее
       </Link>

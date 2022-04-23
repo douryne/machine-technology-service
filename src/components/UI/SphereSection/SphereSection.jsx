@@ -3,7 +3,7 @@ import './SphereSection.css';
 import { SphereCard } from './SphereCard/SphereCard';
 import { sphereData } from '../../../utils/spheresData';
 
-export const SphereSection = () => {
+export const SphereSection = ({ textType }) => {
   const cards = sphereData;
 
   return (
@@ -13,7 +13,12 @@ export const SphereSection = () => {
         {cards.map((card) => {
           return (
             <li key={card.title} className='sphereSection__card'>
-              <SphereCard cardUrl={card.image} cardTitle={card.title} cardText={card.text} cardRoute={card.route} />
+              <SphereCard
+                cardUrl={card.image}
+                cardTitle={card.title}
+                cardText={textType === 'full' ? card.fullText : card.text}
+                cardRoute={card.route}
+              />
             </li>
           );
         })}
