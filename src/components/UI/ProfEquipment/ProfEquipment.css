@@ -25,7 +25,7 @@
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 30px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   margin-top: 0;
   line-height: 1.1;
 }
@@ -42,7 +42,7 @@
 
 .equipment__list-item {
   color: #797979;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   text-align: left;
   line-height: 22px;
@@ -55,7 +55,7 @@
 }
 
 .equipment__list-item::before {
-  content: "\2714";
+  content: '\2714';
   color: orange;
   font-size: 18px;
   font-weight: bolder;
