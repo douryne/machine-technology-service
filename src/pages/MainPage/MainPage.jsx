@@ -1,5 +1,7 @@
+import './MainPage.css';
 import React from 'react';
+import { ProfEquipment } from '../../components/UI/ProfEquipment/ProfEquipment';
 
 export const MainPage = () => {
-  return <div>MainPage</div>;
+  return <ProfEquipment />;
 };
