@@ -15,9 +15,12 @@ export const MainPortfolio = () => {
     { id: 8, name: 'ООО "GREEN LINE PROFIL" (BENKAM)' },
     { id: 9, name: 'ИП OOO "METAL INVENT"(ORIENT GROUP)' },
     { id: 10, name: 'СП ООО "STARGATE SYSTEMS"(AKFA GROUP)' },
-    { id: 12, name: 'АО "UZBEKGIDROENERGOQURILISH"' },
-    { id: 13, name: 'КОМПАНИЯ-ЗАКАЗЧИК "SOFYA STROY". ЁМКОСТИ ДЛЯ КОМПАНИИ "ЛУКОЙЛ"' },
-    { id: 14, name: 'АО «NAVOIYAZOT» - ПРОИЗВОДИТЕЛЬ ХИМПРОДУКЦИИ' },
+    { id: 11, name: 'АО "UZBEKGIDROENERGOQURILISH&quot' },
+    {
+      id: 12,
+      name: 'КОМПАНИЯ-ЗАКАЗЧИК "SOFYA STROY". ЁМКОСТИ ДЛЯ КОМПАНИИ "ЛУКОЙЛ"',
+    },
+    { id: 13, name: 'АО «NAVOIYAZOT» - ПРОИЗВОДИТЕЛЬ ХИМПРОДУКЦИИ' },
   ];
 
   return (
@@ -28,7 +31,7 @@ export const MainPortfolio = () => {
           <div className='container'>
             <div className='panel-group wow fadeInUp animated'>
               {panelName.map((name) => (
-                <Panel>{name.name}</Panel>
+                <Panel key={name.id}>{name.name}</Panel>
               ))}
             </div>
           </div>

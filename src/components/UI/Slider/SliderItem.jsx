@@ -11,31 +11,13 @@ import img5 from '../../../assets/img/slider/5.jpg';
 import img6 from '../../../assets/img/slider/6.jpg';
 
 export const SliderItem = () => {
-  const imageList = [
-    {
-      id: 1,
-      img: img1,
-    },
-    {
-      id: 2,
-      img: img2,
-    },
-    {
-      id: 3,
-      img: img3,
-    },
-    {
-      id: 4,
-      img: img4,
-    },
-    {
-      id: 5,
-      img: img5,
-    },
-    {
-      id: 6,
-      img: img6,
-    },
+  const sliderImages = [
+    { id: 1, image: img1 },
+    { id: 2, image: img2 },
+    { id: 3, image: img3 },
+    { id: 4, image: img4 },
+    { id: 5, image: img5 },
+    { id: 6, image: img6 },
   ];
 
   const settings = {
@@ -48,9 +30,9 @@ export const SliderItem = () => {
 
   return (
     <Slider {...settings}>
-      {imageList.map((img) => (
-        <div key={img.id}>
-          <img src={img.img} alt='' />
+      {sliderImages.map((image) => (
+        <div key={image.id}>
+          <img src={image.image} alt='' />
         </div>
       ))}
     </Slider>
