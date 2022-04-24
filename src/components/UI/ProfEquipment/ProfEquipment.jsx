@@ -2,10 +2,27 @@ import React from 'react';
 import './ProfEquipment.css';
 import { Link } from 'react-router-dom';
 import { equipmentList } from '../../../utils/equipmentList';
+// import { getData } from '../../../utils/testApi';
 
 export const ProfEquipment = () => {
+  // const [listItems, setListItems] = useState([]);
+  // const [title, setTitle] = useState();
   const texts = equipmentList;
 
+  // useEffect(() => {
+  //   Promise.all([getData()]).then(([newTitle]) => {
+  //     setTitle(newTitle.title.rendered);
+
+  //     const newLine = newTitle.content.rendered
+  //       .replaceAll(/\n/g, '')
+  //       .replaceAll('<ul>', '')
+  //       .replaceAll('</ul>', '')
+  //       .replaceAll('<li>', '')
+  //       .replaceAll('</li>', ',')
+  //       .split(',');
+  //     setListItems(newLine);
+  //   });
+  // });
   return (
     <section className='equipment'>
       <div className='equipment__video-container'>
