@@ -6,3 +6,4 @@ export { SliderItem } from './UI/Slider/SliderItem';
 export { SphereSection } from './UI/SphereSection/SphereSection';
 export { SphereCard } from './UI/SphereSection/SphereCard/SphereCard';
 export { ProfEquipment } from './UI/ProfEquipment/ProfEquipment';
+export { Industry } from './UI/Industry/Industry';
