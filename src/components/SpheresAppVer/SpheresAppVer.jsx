@@ -1,6 +1,6 @@
 import React from 'react';
 import { sphereData } from '../../utils/spheresData';
-import { SphereCardAppVer } from '..';
+import { SphereCardAppVer } from './SphereCardAppVer/SphereCardAppVer';
 
 import classes from './SpheresAppVer.module.css';
 

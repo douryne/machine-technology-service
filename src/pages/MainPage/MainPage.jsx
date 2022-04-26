@@ -1,6 +1,6 @@
 import './MainPage.css';
 import React from 'react';
-import { ProfEquipment, SpheresMainVer, AboutProject, MainSlider, CarouselComponent } from '../../components';
+import { MainSlider, SpheresMainVer, ProfEquipment, CarouselComponent, AboutProject } from '../../components';
 
 export const MainPage = () => {
   return (
