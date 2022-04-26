@@ -11,14 +11,7 @@
   height: 100px;
 }
 
-.sphereCard__title {
-  text-align: left;
-  color: #475168;
-  font-weight: 400;
-}
-
 .sphereCard__text {
-  text-align: left;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   line-height: 22px;
@@ -29,7 +22,7 @@
   .sphereCard {
     justify-content: center;
   }
-  .sphereCard__text, .sphereCard__title {
+  .sphereCard__content {
     text-align: center;
   }
 }
