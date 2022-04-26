@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlueHeader } from '../..';
+import { BlueHeader, DescriptionText } from '../..';
 import classes from './Industry.module.css';
 
 export const Industry = ({ image, title, text }) => {
@@ -9,7 +9,7 @@ export const Industry = ({ image, title, text }) => {
       <BlueHeader className={classes.title} importance={3}>
         {title}
       </BlueHeader>
-      <p className={classes.text}>{text}</p>
+      <DescriptionText className={classes.text}>{text}</DescriptionText>
     </div>
   );
 };

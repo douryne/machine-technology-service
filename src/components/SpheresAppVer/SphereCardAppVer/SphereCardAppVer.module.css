@@ -11,13 +11,6 @@
   height: 100px;
 }
 
-.sphereCard__text {
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-  color: #797979;
-}
-
 @media screen and (max-width: 768px) {
   .sphereCard {
     justify-content: center;

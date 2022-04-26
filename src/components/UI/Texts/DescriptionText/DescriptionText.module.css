@@ -1,0 +1,6 @@
+.text {
+  font-family: 'Lato', sans-serif;
+  font-size: calc(0.2vw + 12px);
+  line-height: 22px;
+  color: #797979;
+}

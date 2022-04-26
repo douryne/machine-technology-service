@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlueHeader } from '../..';
+import { BlueHeader, DescriptionText } from '../..';
 
 import classes from './SphereCardAppVer.module.css';
 
@@ -11,7 +11,7 @@ export const SphereCardAppVer = ({ cardUrl, cardTitle, cardText }) => {
         <BlueHeader className={classes.sphereCard__title} importance={4}>
           {cardTitle}
         </BlueHeader>
-        <p className={classes.sphereCard__text}>{cardText}</p>
+        <DescriptionText className={classes.sphereCard__text}>{cardText}</DescriptionText>
       </div>
     </article>
   );
