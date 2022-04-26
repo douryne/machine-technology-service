@@ -12,15 +12,6 @@
   text-align: center;
 }
 
-.sphere-section ul {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 30px;
-  row-gap: 30px;
-  padding: 0;
-}
-
 .industries {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
