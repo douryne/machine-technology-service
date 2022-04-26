@@ -6,12 +6,6 @@
   padding: 30px 12vw;
 }
 
-.sphere-section__title {
-  color: #8a8b8b;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
 .industries {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -19,7 +13,6 @@
   row-gap: 20px;
   padding: 30px 12vw;
   grid-template-columns: repeat(2, 1fr);
-  font-size: calc(0.2vw + 12px);
 }
 
 .industries div:last-child {

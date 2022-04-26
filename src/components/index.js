@@ -19,3 +19,4 @@ export { ProfEquipment } from './ProfEquipment/ProfEquipment';
 // TEXTS COMPONENTS
 export { BlueHeader } from './UI/Texts/BlueHeader/BlueHeader';
 export { DescriptionText } from './UI/Texts/DescriptionText/DescriptionText';
+export { GreyHeader } from './UI/Texts/GreyHeader/GreyHeader';

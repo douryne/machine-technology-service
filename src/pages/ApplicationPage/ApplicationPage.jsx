@@ -1,5 +1,5 @@
 import React from 'react';
-import { PageTitle, SpheresAppVer, Industry } from '../../components';
+import { PageTitle, SpheresAppVer, Industry, GreyHeader } from '../../components';
 import { industryData } from '../../utils/industryData';
 
 import classes from './ApplicationPage.module.css';
@@ -9,9 +9,9 @@ export const ApplicationPage = () => {
     <div className={classes.application}>
       <PageTitle>Применение</PageTitle>
       <section className={classes['sphere-section']}>
-        <h4 className={classes['sphere-section__title']}>
+        <GreyHeader importance={4} className={classes['sphere-section__title']}>
           Металлоконструкции DAL HEAVY INDUSTRIES могут быть востребованы с следующих направлениях промышленности:
-        </h4>
+        </GreyHeader>
         <SpheresAppVer />
       </section>
       <section className={classes.industries}>
