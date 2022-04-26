@@ -3,7 +3,7 @@ import React from 'react';
 import { Panel, PanelGroup } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
 import './AboutProject.css';
-import { aboutProjectInfo } from '../../../utils/aboutProjectInfo';
+import { aboutProjectInfo } from '../../utils/aboutProjectInfo';
 
 export const AboutProject = () => {
   const articles = aboutProjectInfo;
