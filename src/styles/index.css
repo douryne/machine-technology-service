@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
-  color: #797979;
-  /* font-family: 'Lato', sans-serif; */
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter', sans-serif !important;
   padding: 0px !important;
   margin: 0px !important;
   font-size: 14px;
