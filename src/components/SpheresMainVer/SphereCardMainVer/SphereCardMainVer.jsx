@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './SphereCard.css';
+import './SphereCardMainVer.css';
 
-export const SphereCard = ({ cardUrl, cardTitle, cardText, cardRoute }) => {
+export const SphereCardMainVer = ({ cardUrl, cardTitle, cardText, cardRoute }) => {
   return (
     <article className='sphereCard'>
       <img src={cardUrl} alt={cardTitle} className='sphereCard__image' />

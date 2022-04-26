@@ -1,9 +1,9 @@
 import React from 'react';
-import './SphereSection.css';
-import { SphereCard } from './SphereCard/SphereCard';
-import { sphereData } from '../../../utils/spheresData';
+import './SpheresMainVer.css';
+import { SphereCardMainVer } from './SphereCardMainVer/SphereCardMainVer';
+import { sphereData } from '../../utils/spheresData';
 
-export const SphereSection = ({ textType }) => {
+export const SpheresMainVer = () => {
   const cards = sphereData;
 
   return (
@@ -13,10 +13,10 @@ export const SphereSection = ({ textType }) => {
         {cards.map((card) => {
           return (
             <li key={card.title} className='sphereSection__card'>
-              <SphereCard
+              <SphereCardMainVer
                 cardUrl={card.image}
                 cardTitle={card.title}
-                cardText={textType === 'full' ? card.fullText : card.text}
+                cardText={card.text}
                 cardRoute={card.route}
               />
             </li>

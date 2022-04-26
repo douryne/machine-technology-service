@@ -1,0 +1,35 @@
+.sphereCard {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: none;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.sphereCard__image {
+  width: 100px;
+  height: 100px;
+}
+
+.sphereCard__title {
+  text-align: left;
+  color: #475168;
+  font-weight: 400;
+}
+
+.sphereCard__text {
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #797979;
+}
+
+@media screen and (max-width: 768px) {
+  .sphereCard {
+    justify-content: center;
+  }
+  .sphereCard__text, .sphereCard__title {
+    text-align: center;
+  }
+}

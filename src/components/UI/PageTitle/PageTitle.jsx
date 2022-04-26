@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './Title.css';
+import './PageTitle.css';
 
-export const Title = ({ children }) => {
+export const PageTitle = ({ children }) => {
   return (
     <div className='breadcrumbs'>
       <div className='container'>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProfEquipment.css';
 import { Link } from 'react-router-dom';
-import { equipmentList } from '../../../utils/equipmentList';
+import { equipmentList } from '../../utils/equipmentList';
 
 export const ProfEquipment = () => {
   const texts = equipmentList;

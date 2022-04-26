@@ -1,11 +1,11 @@
 import './MainPage.css';
 import React from 'react';
-import { ProfEquipment, SphereSection } from '../../components';
+import { ProfEquipment, SpheresMainVer } from '../../components';
 
 export const MainPage = () => {
   return (
     <div>
-      <SphereSection textType='short' />
+      <SpheresMainVer />
       <ProfEquipment />
     </div>
   );
