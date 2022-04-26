@@ -6,6 +6,10 @@
   padding: 30px 12vw;
 }
 
+.sphere-section__title {
+  margin-bottom: 50px;
+}
+
 .industries {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -9,9 +9,11 @@ export const ApplicationPage = () => {
     <div className={classes.application}>
       <PageTitle>Применение</PageTitle>
       <section className={classes['sphere-section']}>
-        <GreyHeader importance={4} className={classes['sphere-section__title']}>
-          Металлоконструкции DAL HEAVY INDUSTRIES могут быть востребованы с следующих направлениях промышленности:
-        </GreyHeader>
+        <div className={classes['sphere-section__title']}>
+          <GreyHeader importance={4}>
+            Металлоконструкции DAL HEAVY INDUSTRIES могут быть востребованы с следующих направлениях промышленности:
+          </GreyHeader>
+        </div>
         <SpheresAppVer />
       </section>
       <section className={classes.industries}>
