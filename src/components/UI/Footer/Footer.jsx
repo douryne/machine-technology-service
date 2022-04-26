@@ -15,7 +15,7 @@ export const Footer = () => {
   ];
 
   return (
-    <div>
+    <div className='footer-wrapper'>
       <footer className='footer'>
         <div className='container'>
           <div className='row'>
