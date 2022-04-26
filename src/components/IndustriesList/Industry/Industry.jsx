@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlueHeader, DescriptionText } from '..';
+import { BlueHeader, DescriptionText } from '../..';
 import classes from './Industry.module.css';
 
 export const Industry = ({ image, title, text }) => {

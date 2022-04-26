@@ -13,7 +13,8 @@ export { SphereCardMainVer } from './SpheresMainVer/SphereCardMainVer/SphereCard
 export { SpheresAppVer } from './SpheresAppVer/SpheresAppVer';
 export { SphereCardAppVer } from './SpheresAppVer/SphereCardAppVer/SphereCardAppVer';
 export { ProfEquipment } from './ProfEquipment/ProfEquipment';
-export { Industry } from './Industry/Industry';
+export { Industry } from './IndustriesList/Industry/Industry';
+export { IndustriesList } from './IndustriesList/IndustriesList';
 export { AboutProject } from './AboutProject/AboutProject';
 
 // TEXTS COMPONENTS

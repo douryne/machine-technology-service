@@ -11,28 +11,5 @@
 }
 
 .industries {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 20px;
-  row-gap: 20px;
   padding: 30px 12vw;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.industries div:last-child {
-  grid-column: span 2;
-}
-
-@media screen and (max-width: 768px) {
-  .sphere-section ul {
-      grid-template-columns: 1fr;
-  }
-
-  .industries {
-    grid-template-columns: 1fr;
-  }
-
-  .industries div:last-child {
-    grid-column: span 1;
-  }
 }

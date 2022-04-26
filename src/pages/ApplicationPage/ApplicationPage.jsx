@@ -1,6 +1,5 @@
 import React from 'react';
-import { PageTitle, SpheresAppVer, Industry, GreyHeader } from '../../components';
-import { industryData } from '../../utils/industryData';
+import { PageTitle, SpheresAppVer, IndustriesList, GreyHeader } from '../../components';
 
 import classes from './ApplicationPage.module.css';
 
@@ -17,9 +16,7 @@ export const ApplicationPage = () => {
         <SpheresAppVer />
       </section>
       <section className={classes.industries}>
-        {industryData.map((item) => (
-          <Industry key={item.title} title={item.title} image={item.image} text={item.text} />
-        ))}
+        <IndustriesList />
       </section>
     </div>
   );
