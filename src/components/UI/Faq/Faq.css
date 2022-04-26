@@ -1,0 +1,16 @@
+.gray-bg {
+  background: #fff;
+}
+table {
+  max-width: 100%;
+  background-color: transparent;
+}
+#th1 {
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: bold;
+}
+#th2 {
+  font-size: 1.3em;
+  text-align: center;
+}

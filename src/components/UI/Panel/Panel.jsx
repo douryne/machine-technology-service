@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Faq } from '../Faq/Faq';
 import { SliderItem } from '../Slider/SliderItem';
 
 import './Panel.css';
@@ -17,6 +18,7 @@ export const Panel = ({ children }) => {
 
       <div id='collapseThirty' className={open ? 'panel-collapse collapse' : 'panel-collapse collapse in'}>
         {portfolio.pathname === '/portfolio' && <SliderItem />}
+        {portfolio.pathname === '/equipment' && <Faq />}
       </div>
     </div>
   );
