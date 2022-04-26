@@ -1,7 +1,17 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
+  const footerNav = [
+    { title: 'Главная', link: '/' },
+    { title: 'Портфолио', link: '/portfolio' },
+    { title: 'Оборудование завода', link: '/' },
+    { title: 'Применение', link: '/application' },
+    { title: 'Наши референсы', link: '/' },
+    { title: 'Контакты', link: '/' },
+  ];
+
   return (
     <div>
       <footer className='footer'>
@@ -19,27 +29,21 @@ export const Footer = () => {
                   <i className='fa fa-globe pr-10' /> Узбекистан, Ташкентская область,
                 </p>
                 <p>
-                  <i className='fa fa-home pr-10' /> г. Ахангаран, СЭЗ &quot;Ангрен&quot;,
-                  <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ПРОМЗОНА
+                  <i className='fa fa-home pr-10' /> 110100 г. Алмалык пос. Бустон
                 </p>
                 <p>
-                  <a href='tel:(998 99) 884 87 57' className='fa fa-mobile pr-10'>
-                    (998 99) 884 87 57
+                  <a href='tel:+998935006532' className='fa fa-mobile pr-10'>
+                    (998 93) 500 65 32
                   </a>
                 </p>
                 <p>
-                  <a href='tel:(998 71) 205 10 07' className='fa fa-mobile pr-10'>
-                    (998 71) 205 10 07
-                  </a>
-                </p>
-                <p>
-                  <a href='tel:(998 70) 202 07 00' className='fa fa-mobile pr-10'>
-                    (998 70) 202 07 00
+                  <a href='tel:+998946246875' className='fa fa-mobile pr-10'>
+                    (998 94) 624 68 75
                   </a>
                 </p>
                 <p>
                   <i className='fa fa-envelope pr-10' />
-                  <a href='mailto:info@dalheavy.uz'>info@dalheavy.uz</a>
+                  <a href='mailto:dilshod.h84@gmail.com'>dilshod.h84@gmail.com</a>
                 </p>
               </address>
             </div>
@@ -48,30 +52,11 @@ export const Footer = () => {
               <div className='page-footer wow fadeInUp' data-wow-duration='2s' data-wow-delay='.5s'>
                 <h1>меню</h1>
                 <ul className='page-footer-list'>
-                  <li>
-                    <i className='fa fa-angle-right' />
-                    <a href='index.html'>Главная</a>
-                  </li>
-                  <li>
-                    <i className='fa fa-angle-right' />
-                    <a href='folio.html'>Портфолио</a>
-                  </li>
-                  <li>
-                    <i className='fa fa-angle-right' />
-                    <a href='equipment.html'>Оборудование завода</a>
-                  </li>
-                  <li>
-                    <i className='fa fa-angle-right' />
-                    <a href='practice.html'>Применение</a>
-                  </li>
-                  <li>
-                    <i className='fa fa-angle-right' />
-                    <a href='info.html'>Наши референсы</a>
-                  </li>
-                  <li>
-                    <i className='fa fa-angle-right' />
-                    <a href='contact.html'>Контакты</a>
-                  </li>
+                  {footerNav.map((navLink) => (
+                    <li key={navLink.title}>
+                      <Link to={navLink.link}>{navLink.title}</Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

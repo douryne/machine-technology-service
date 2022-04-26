@@ -5,7 +5,6 @@ import { equipmentList } from '../../utils/equipmentList';
 
 export const ProfEquipment = () => {
   const texts = equipmentList;
-
   return (
     <section className='equipment'>
       <div className='equipment__video-container'>

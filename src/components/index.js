@@ -9,3 +9,6 @@ export { SpheresAppVer } from './SpheresAppVer/SpheresAppVer';
 export { SphereCardAppVer } from './SpheresAppVer/SphereCardAppVer/SphereCardAppVer';
 export { ProfEquipment } from './ProfEquipment/ProfEquipment';
 export { Industry } from './UI/Industry/Industry';
+export { MainSlider } from './UI/MainSlider/MainSlider';
+export { CarouselComponent } from './UI/Carousel/Carousel';
+export { AboutProject } from './UI/AboutProject/AboutProject';
