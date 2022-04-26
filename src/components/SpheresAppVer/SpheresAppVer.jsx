@@ -6,16 +6,12 @@ import classes from './SpheresAppVer.module.css';
 
 export const SpheresAppVer = () => {
   return (
-    <section>
-      <ul className={classes.List}>
-        {sphereData.map((card) => {
-          return (
-            <li key={card.title}>
-              <SphereCardAppVer cardUrl={card.image} cardTitle={card.title} cardText={card.fullText} />
-            </li>
-          );
-        })}
-      </ul>
+    <section className={classes.List}>
+      {sphereData.map((card) => {
+        return (
+          <SphereCardAppVer key={card.title} cardUrl={card.image} cardTitle={card.title} cardText={card.fullText} />
+        );
+      })}
     </section>
   );
 };

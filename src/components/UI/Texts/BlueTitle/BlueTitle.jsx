@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from './BlueHeader.module.css';
+import classes from './BlueTitle.module.css';
 
-export const BlueHeader = ({ children, importance }) => {
+export const BlueTitle = ({ children, importance }) => {
   const HeaderTag = `h${importance}`;
   return <HeaderTag className={classes.title}>{children}</HeaderTag>;
 };

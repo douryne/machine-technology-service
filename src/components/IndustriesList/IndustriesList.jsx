@@ -6,10 +6,10 @@ import classes from './IndustriesList.module.css';
 
 export const IndustriesList = () => {
   return (
-    <ul className={classes.List}>
+    <div className={classes.List}>
       {industryData.map((item) => (
         <Industry key={item.title} title={item.title} image={item.image} text={item.text} />
       ))}
-    </ul>
+    </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { PageTitle, SpheresAppVer, IndustriesList, GreyHeader } from '../../components';
+import { PageTitle, SpheresAppVer, IndustriesList, GreyTitle } from '../../components';
 
 import classes from './ApplicationPage.module.css';
 
@@ -9,9 +9,9 @@ export const ApplicationPage = () => {
       <PageTitle>Применение</PageTitle>
       <section className={classes['sphere-section']}>
         <div className={classes['sphere-section__title']}>
-          <GreyHeader importance={4}>
+          <GreyTitle importance={3}>
             Металлоконструкции DAL HEAVY INDUSTRIES могут быть востребованы с следующих направлениях промышленности:
-          </GreyHeader>
+          </GreyTitle>
         </div>
         <SpheresAppVer />
       </section>

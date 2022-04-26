@@ -18,6 +18,6 @@ export { IndustriesList } from './IndustriesList/IndustriesList';
 export { AboutProject } from './AboutProject/AboutProject';
 
 // TEXTS COMPONENTS
-export { BlueHeader } from './UI/Texts/BlueHeader/BlueHeader';
+export { BlueTitle } from './UI/Texts/BlueTitle/BlueTitle';
 export { DescriptionText } from './UI/Texts/DescriptionText/DescriptionText';
-export { GreyHeader } from './UI/Texts/GreyHeader/GreyHeader';
+export { GreyTitle } from './UI/Texts/GreyTitle/GreyTitle';
