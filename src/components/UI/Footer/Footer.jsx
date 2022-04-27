@@ -28,10 +28,8 @@ export const Footer = () => {
               <h1>КОНТАКТЫ</h1>
               <address>
                 <p>
-                  <i className='fa fa-globe pr-10' /> Узбекистан, Ташкентская область,
-                </p>
-                <p>
-                  <i className='fa fa-home pr-10' /> 110100 г. Алмалык пос. Бустон
+                  Узбекистан, Ташкентская область,
+                  <br /> 110100 г. Алмалык пос. Бустон
                 </p>
                 <p>
                   <a href='tel:+998935006532' className='fa fa-mobile pr-10'>
@@ -50,7 +48,7 @@ export const Footer = () => {
               </address>
             </div>
 
-            <div className='col-lg-3 col-sm-3'>
+            <div className='col-lg-3 col-sm-3 nav-wrapper'>
               <div className='page-footer wow fadeInUp' data-wow-duration='2s' data-wow-delay='.5s'>
                 <h1>меню</h1>
                 <ul className='page-footer-list'>
