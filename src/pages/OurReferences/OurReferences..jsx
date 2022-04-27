@@ -1,9 +1,9 @@
 import React from 'react';
 import { Title, Table } from '../../components';
 
-import './MainEssays.css';
+import './OurReferences.css';
 
-export const MainEssays = () => {
+export const OurReferences = () => {
   return (
     <div>
       <Title>Наши референсы</Title>
