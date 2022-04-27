@@ -13,7 +13,7 @@ export const AboutProject = () => {
       <PanelGroup className='aboutProject__panel-gruop' accordion>
         {articles.map((article) => {
           return (
-            <li className='aboutProject__list-item'>
+            <div className='aboutProject__list-item'>
               <Panel
                 className='aboutProject__panel'
                 header={article.title}
@@ -21,7 +21,7 @@ export const AboutProject = () => {
               >
                 <p className='aboutProject__list-text'>{article.text}</p>
               </Panel>
-            </li>
+            </div>
           );
         })}
       </PanelGroup>

@@ -9,3 +9,7 @@ export { ContactsBtn } from './UI/ContactsBtn/ContactsBtn';
 export { ContactsPlateGroup } from './UI/ContactsPlateGroup/ContactsPlateGroup';
 export { ContactsForm } from './UI/ContactsForm/ContactsForm';
 export { CopyrightFooter } from './UI/CopyrightFooter/CopyrightFooter';
+export { ProfEquipment } from './UI/ProfEquipment/ProfEquipment';
+export { AboutProject } from './UI/AboutProject/AboutProject';
+export { MainSlider } from './UI/MainSlider/MainSlider';
+export { CarouselComponent } from './UI/Carousel/Carousel';
