@@ -8,3 +8,4 @@ export { ContactsPlate } from './UI/ContactsPlate/ContactsPlate';
 export { ContactsBtn } from './UI/ContactsBtn/ContactsBtn';
 export { ContactsPlateGroup } from './UI/ContactsPlateGroup/ContactsPlateGroup';
 export { ContactsForm } from './UI/ContactsForm/ContactsForm';
+export { CopyrightFooter } from './UI/CopyrightFooter/CopyrightFooter';
