@@ -1,6 +1,8 @@
 import React from 'react';
-import './Footer.css';
 import { Link } from 'react-router-dom';
+import { CopyrightFooter } from '../..';
+
+import './Footer.css';
 
 export const Footer = () => {
   const footerNav = [
@@ -13,7 +15,7 @@ export const Footer = () => {
   ];
 
   return (
-    <div>
+    <div className='footer-wrapper'>
       <footer className='footer'>
         <div className='container'>
           <div className='row'>
@@ -63,6 +65,7 @@ export const Footer = () => {
           </div>
         </div>
       </footer>
+      <CopyrightFooter />
     </div>
   );
 };
