@@ -25,18 +25,29 @@
   color: orange
 }
 
+.nav-wrapper {
+  padding: 0 20px;
+}
+
 ul.page-footer-list {
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 ul.page-footer-list li {
-  line-height: 35px;
-  border-bottom: 1px dashed #636F79;
+  padding: 10px 0;
 }
 
 ul.page-footer-list a {
-  color: #fff
+  color: #fff;
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+}
+
+ul.page-footer-list a:hover {
+  color: orange;
 }
 
 ul.page-footer-list li i {

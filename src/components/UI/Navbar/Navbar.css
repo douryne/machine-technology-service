@@ -43,9 +43,11 @@ head-section {
 }
 
 .navbar-brand img {
-  width: 200px;
-  height: 150px;
+  width: 120px;
+  height: 100px;
   border-radius: 20px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .navbar-brand span {
@@ -106,7 +108,7 @@ ul.dropdown-menu {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .head-section .navbar {
@@ -166,13 +168,8 @@ ul.dropdown-menu {
 }
 
 .head-section .nav li .dropdown-menu li a {
-  line-height: 30px;
   padding: 3px 12px;
   border-bottom: 1px solid #F3E8E8;
-}
-
-.dropdown {
-  text-align: center;
 }
 
 #lang {

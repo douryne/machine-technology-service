@@ -1,6 +1,6 @@
 import React from 'react';
 import './MainSlider.css';
-import { SliderItem } from '../../index';
+import { SliderItem } from '../Slider/SliderItem';
 
 export const MainSlider = () => {
   return (

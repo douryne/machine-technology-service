@@ -1,12 +1,12 @@
 import React from 'react';
-import { Panel, Title } from '../../components';
+import { Panel, PageTitle } from '../../components';
 
 import './MainPortfolio.css';
 
 export const MainPortfolio = () => {
   return (
     <div>
-      <Title>НАШЕ ПОРТФОЛИО</Title>
+      <PageTitle>НАШЕ ПОРТФОЛИО</PageTitle>
       <div className='row'>
         <div className='col-md-12'>
           <div className='container'>

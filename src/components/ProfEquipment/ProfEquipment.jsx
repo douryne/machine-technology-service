@@ -1,11 +1,11 @@
 import React from 'react';
 import './ProfEquipment.css';
 import { Link } from 'react-router-dom';
-import { equipmentList } from '../../../utils/equipmentList';
+import { BlueTitle } from '..';
+import { equipmentList } from '../../utils/equipmentList';
 
 export const ProfEquipment = () => {
   const texts = equipmentList;
-
   return (
     <section className='equipment'>
       <div className='equipment__video-container'>
@@ -22,9 +22,15 @@ export const ProfEquipment = () => {
         <h2 className='equipment__list-title'>ПРОФЕССИОНАЛЬНОЕ ОБОРУДОВАНИЕ</h2>
         <hr className='equipment__list-line' />
         <ul className='equipment__list'>
-          {texts.map((text) => {
-            return <li className='equipment__list-item'>{text}</li>;
-          })}
+          {texts.length ? (
+            texts.map((text) => (
+              <li key={text} className='equipment__list-item'>
+                {text}
+              </li>
+            ))
+          ) : (
+            <BlueTitle importance={1}>Что-то пошло не так</BlueTitle>
+          )}
         </ul>
         <hr className='equipment__list-line' />
         <Link to='/application' className='equipment__list-button'>
