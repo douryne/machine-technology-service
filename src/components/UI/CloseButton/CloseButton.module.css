@@ -1,9 +1,8 @@
 .removeBtn {
   border: 1px solid #000122;
-  border-radius: 100%;
-  width: 30px;
-  height: 30px;
+  border-radius: 10px;
   display: flex;
+  padding: 10px 0;
   justify-content: center;
   align-items: center;
   color: #000122;
@@ -11,9 +10,9 @@
   transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
-.removeBtn::after {
+/* .removeBtn::after {
   content: '✖';
-}
+} */
 
 .removeBtn:hover {
   background-color: #000122;
