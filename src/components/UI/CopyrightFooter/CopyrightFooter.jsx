@@ -7,12 +7,9 @@ export const CopyrightFooter = () => {
     <footer className={classes.footer}>
       <div className='container'>
         <div className={classes.content}>
-          <span>2021</span>
+          <span>2022</span>
           <span>@Copyright</span>
-          <span>DALHEAVY.UZ</span>
-          <a className={classes.link} href='http://www.kamilov.uz/'>
-            web-developer
-          </a>
+          <span>JGate</span>
         </div>
       </div>
     </footer>
