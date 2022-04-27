@@ -7,7 +7,6 @@ export const BurgerMenu = ({ elements, visible, setVisible }) => {
   return (
     <div>
       <div className={visible ? 'nav_burger_menu active' : 'nav_burger_menu'}>
-        <CloseButton handleClose={setVisible} />
         <ul className='nav navbar-nav nav_links'>
           {elements.length ? (
             elements.map((navLink) => (
@@ -21,6 +20,7 @@ export const BurgerMenu = ({ elements, visible, setVisible }) => {
             <BlueTitle importance={1}>Что-то пошло не так</BlueTitle>
           )}
         </ul>
+        <CloseButton handleClose={setVisible} />
       </div>
     </div>
   );
