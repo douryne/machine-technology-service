@@ -14,7 +14,7 @@ export const AboutProject = () => {
       <PanelGroup className='aboutProject__panel-gruop' accordion>
         {articles.length ? (
           articles.map((article) => (
-            <div className='aboutProject__list-item'>
+            <div key={article.title} className='aboutProject__list-item'>
               <Panel className='aboutProject__panel' header={article.title} shaded>
                 <p className='aboutProject__list-text'>{article.text}</p>
               </Panel>

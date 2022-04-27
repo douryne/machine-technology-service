@@ -23,7 +23,11 @@ export const ProfEquipment = () => {
         <hr className='equipment__list-line' />
         <ul className='equipment__list'>
           {texts.length ? (
-            texts.map((text) => <li className='equipment__list-item'>{text}</li>)
+            texts.map((text) => (
+              <li key={text} className='equipment__list-item'>
+                {text}
+              </li>
+            ))
           ) : (
             <BlueTitle importance={1}>Что-то пошло не так</BlueTitle>
           )}

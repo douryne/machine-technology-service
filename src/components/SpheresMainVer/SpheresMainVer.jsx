@@ -14,7 +14,7 @@ export const SpheresMainVer = () => {
       <div className='sphereSection__cards-container'>
         {cards.length ? (
           cards.map((card) => (
-            <div className='sphereSection__card'>
+            <div key={card.title} className='sphereSection__card'>
               <SphereCardMainVer
                 cardUrl={card.image}
                 cardTitle={card.title}

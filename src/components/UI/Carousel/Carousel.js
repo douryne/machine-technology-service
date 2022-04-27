@@ -14,7 +14,7 @@ export const CarouselComponent = () => {
       <div className='carousel__container'>
         <Carousel showStatus={false} showArrows={false} autoPlay interval={5000} infiniteLoop emulateTouch>
           {images.length ? (
-            images.map((image) => <img src={image} alt='someImage' />)
+            images.map((image) => <img key={image} src={image} alt='someImage' />)
           ) : (
             <BlueTitle importance={1}>Что-то пошло не так</BlueTitle>
           )}
