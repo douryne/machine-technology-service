@@ -46,12 +46,6 @@
       margin-right: -10px;
   }
 
-  .navbar-brand img {
-    width: 150px;
-    height: 110px;
-    border-radius: 20px;
-  }  
-
   .head-section .nav li .dropdown-menu li a:hover {
       color: #48C9B0 !important;
   }
