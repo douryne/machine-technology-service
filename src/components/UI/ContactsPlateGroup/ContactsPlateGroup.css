@@ -1,6 +1,13 @@
 .contactsPlateGroup {
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px;
-    width: 490px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  width: 490px;
+}
+
+@media screen and (max-width: 800px) {
+  .contactsPlateGroup {
+    width: 300px;
+    margin-bottom: 30px;
   }
+}

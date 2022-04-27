@@ -29,3 +29,22 @@
   width: 1170px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 1200px) {
+  .contactsPage__content {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contactsPage__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactsPage__title-container {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+}
