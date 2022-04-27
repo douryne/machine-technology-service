@@ -1,0 +1,21 @@
+.footer {
+  background-color: #2C3E50;
+  padding: 15px 0;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content span {
+  display: block;
+  margin: 0 10px;
+}
+
+.link {
+  color: #bbbbbb;
+  margin: 0 10px;
+}

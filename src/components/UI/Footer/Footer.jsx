@@ -1,19 +1,21 @@
 import React from 'react';
-import './Footer.css';
 import { Link } from 'react-router-dom';
+import { CopyrightFooter, BlueTitle } from '../..';
+
+import './Footer.css';
 
 export const Footer = () => {
   const footerNav = [
     { title: 'Главная', link: '/' },
     { title: 'Портфолио', link: '/portfolio' },
-    { title: 'Оборудование завода', link: '/' },
+    { title: 'Оборудование завода', link: '/equipment' },
     { title: 'Применение', link: '/application' },
-    { title: 'Наши референсы', link: '/' },
-    { title: 'Контакты', link: '/' },
+    { title: 'Наши референсы', link: '/info' },
+    { title: 'Контакты', link: '/contacts' },
   ];
 
   return (
-    <div>
+    <div className='footer-wrapper'>
       <footer className='footer'>
         <div className='container'>
           <div className='row'>
@@ -52,17 +54,22 @@ export const Footer = () => {
               <div className='page-footer wow fadeInUp' data-wow-duration='2s' data-wow-delay='.5s'>
                 <h1>меню</h1>
                 <ul className='page-footer-list'>
-                  {footerNav.map((navLink) => (
-                    <li key={navLink.title}>
-                      <Link to={navLink.link}>{navLink.title}</Link>
-                    </li>
-                  ))}
+                  {footerNav.length ? (
+                    footerNav.map((navLink) => (
+                      <li key={navLink.title}>
+                        <Link to={navLink.link}>{navLink.title}</Link>
+                      </li>
+                    ))
+                  ) : (
+                    <BlueTitle importance={1}>Что-то пошло не так</BlueTitle>
+                  )}
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </footer>
+      <CopyrightFooter />
     </div>
   );
 };

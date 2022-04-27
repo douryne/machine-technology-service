@@ -6,6 +6,9 @@ export { PageTitle } from './UI/PageTitle/PageTitle';
 export { SliderItem } from './UI/Slider/SliderItem';
 export { MainSlider } from './UI/MainSlider/MainSlider';
 export { CarouselComponent } from './UI/Carousel/Carousel';
+export { CopyrightFooter } from './UI/CopyrightFooter/CopyrightFooter';
+export { CloseButton } from './UI/CloseButton/CloseButton';
+export { BurgerMenu } from './UI/BurgerMenu/BurgerMenu';
 
 // INDEPENDENT COMPONENTS
 export { SpheresMainVer } from './SpheresMainVer/SpheresMainVer';

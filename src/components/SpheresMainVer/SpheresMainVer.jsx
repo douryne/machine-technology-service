@@ -1,7 +1,9 @@
 import React from 'react';
-import './SpheresMainVer.css';
+import { BlueTitle } from '..';
 import { SphereCardMainVer } from './SphereCardMainVer/SphereCardMainVer';
 import { sphereData } from '../../utils/spheresData';
+
+import './SpheresMainVer.css';
 
 export const SpheresMainVer = () => {
   const cards = sphereData;
@@ -9,20 +11,22 @@ export const SpheresMainVer = () => {
   return (
     <section className='sphereSection'>
       <h2 className='sphereSection__title'>Производство металлоконструкций для</h2>
-      <ul className='sphereSection__cards-container'>
-        {cards.map((card) => {
-          return (
-            <li key={card.title} className='sphereSection__card'>
+      <div className='sphereSection__cards-container'>
+        {cards.length ? (
+          cards.map((card) => (
+            <div className='sphereSection__card'>
               <SphereCardMainVer
                 cardUrl={card.image}
                 cardTitle={card.title}
                 cardText={card.text}
                 cardRoute={card.route}
               />
-            </li>
-          );
-        })}
-      </ul>
+            </div>
+          ))
+        ) : (
+          <BlueTitle importance={1}>Что-то пошло не так</BlueTitle>
+        )}
+      </div>
     </section>
   );
 };

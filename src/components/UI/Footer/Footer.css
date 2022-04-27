@@ -1,3 +1,10 @@
+.footer-wrapper {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 .footer {
   background: #34495e;
   color: #fff;

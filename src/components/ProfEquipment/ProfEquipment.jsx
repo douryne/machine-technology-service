@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProfEquipment.css';
 import { Link } from 'react-router-dom';
+import { BlueTitle } from '..';
 import { equipmentList } from '../../utils/equipmentList';
 
 export const ProfEquipment = () => {
@@ -21,9 +22,11 @@ export const ProfEquipment = () => {
         <h2 className='equipment__list-title'>ПРОФЕССИОНАЛЬНОЕ ОБОРУДОВАНИЕ</h2>
         <hr className='equipment__list-line' />
         <ul className='equipment__list'>
-          {texts.map((text) => {
-            return <li className='equipment__list-item'>{text}</li>;
-          })}
+          {texts.length ? (
+            texts.map((text) => <li className='equipment__list-item'>{text}</li>)
+          ) : (
+            <BlueTitle importance={1}>Что-то пошло не так</BlueTitle>
+          )}
         </ul>
         <hr className='equipment__list-line' />
         <Link to='/' className='equipment__list-button'>

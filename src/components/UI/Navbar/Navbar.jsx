@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../../assets/img/logo.jpg';
-import { BurgerMenu } from '../BurgerMenu/BurgerMenu';
+import { BurgerMenu, BlueTitle } from '../..';
 import { useAutoCloseSidebar } from '../../../hooks/useAutoCloseSidebar';
 
 import './Navbar.css';
@@ -8,12 +9,12 @@ import './Navbar-media.css';
 
 export const Navbar = () => {
   const navList = [
-    { title: 'Главная', href: 'index.html' },
-    { title: 'Портфолио', href: 'folio.html' },
-    { title: 'Оборудование завода', href: 'equipment.html' },
-    { title: 'Применение', href: 'practise.html' },
-    { title: 'Наши референсы', href: 'info.html' },
-    { title: 'Контакты', href: 'contact.html' },
+    { title: 'Главная', href: '/' },
+    { title: 'Портфолио', href: '/portfolio' },
+    { title: 'Оборудование завода', href: '/equipment' },
+    { title: 'Применение', href: '/application' },
+    { title: 'Наши референсы', href: '/info' },
+    { title: 'Контакты', href: '/contacts' },
   ];
 
   const menuMinScreenWidth = 768;
@@ -58,13 +59,17 @@ export const Navbar = () => {
 
         <div className='navbar-collapse collapse'>
           <ul className='nav navbar-nav'>
-            {navList.map((navLink) => (
-              <li key={navLink.href} className='dropdown'>
-                <a className='dropdown-toggle' href={navLink.href}>
-                  {navLink.title}
-                </a>
-              </li>
-            ))}
+            {navList.length ? (
+              navList.map((navLink) => (
+                <li key={navLink.title} className='dropdown'>
+                  <Link className='dropdown-toggle' to={navLink.href}>
+                    {navLink.title}
+                  </Link>
+                </li>
+              ))
+            ) : (
+              <BlueTitle importance={1}>Что-то пошло не так</BlueTitle>
+            )}
           </ul>
         </div>
       </div>
