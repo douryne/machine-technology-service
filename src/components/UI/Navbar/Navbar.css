@@ -166,13 +166,8 @@ ul.dropdown-menu {
 }
 
 .head-section .nav li .dropdown-menu li a {
-  line-height: 30px;
   padding: 3px 12px;
   border-bottom: 1px solid #F3E8E8;
-}
-
-.dropdown {
-  text-align: center;
 }
 
 #lang {
