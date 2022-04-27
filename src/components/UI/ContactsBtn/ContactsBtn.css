@@ -1,0 +1,23 @@
+.contactsBtn {
+    background-color: #37bc9b;
+    border: none;
+    border-radius: 3px;
+    font-weight: normal;
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 6px 12px;
+    margin-left: 20px;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+.contactsBtn:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: orange;
+  }

@@ -4,4 +4,8 @@ export { Panel } from './UI/Panel/Panel';
 export { Title } from './UI/Title/Title';
 export { SliderItem } from './UI/Slider/SliderItem';
 export { SphereSection } from './UI/SphereSection/SphereSection';
+export { ContactsPlate } from './UI/ContactsPlate/ContactsPlate';
+export { ContactsBtn } from './UI/ContactsBtn/ContactsBtn';
+export { ContactsPlateGroup } from './UI/ContactsPlateGroup/ContactsPlateGroup';
+export { ContactsForm } from './UI/ContactsForm/ContactsForm';
 export { CopyrightFooter } from './UI/CopyrightFooter/CopyrightFooter';

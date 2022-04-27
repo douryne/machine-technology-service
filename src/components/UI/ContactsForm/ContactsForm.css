@@ -1,0 +1,23 @@
+.contactsForm {
+    width: 650px;
+    margin-left: 15px;
+}
+
+.contactsForm__title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0 0 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  .contactsForm {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contactsForm {
+    width: 300px;
+  }
+}
