@@ -1,0 +1,25 @@
+.gray-bg {
+  background: #fff;
+  color: #797979 !important;
+}
+.gray-bg .container {
+  width: 80% !important;
+  margin: 3% auto !important;
+}
+table {
+  max-width: 100%;
+  background-color: transparent;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#th1 {
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: bold;
+}
+#th2 {
+  font-size: 1.3em;
+  text-align: center;
+}
