@@ -7,7 +7,7 @@ export { SliderItem } from './UI/Slider/SliderItem';
 export { MainSlider } from './UI/MainSlider/MainSlider';
 export { CarouselComponent } from './UI/Carousel/Carousel';
 export { ContactsPlate } from './UI/ContactsPlate/ContactsPlate';
-export { ContactsBtn } from './UI/ContactsBtn/ContactsBtn';
+export { Button } from './UI/Button/Button';
 export { ContactsPlateGroup } from './UI/ContactsPlateGroup/ContactsPlateGroup';
 export { ContactsForm } from './UI/ContactsForm/ContactsForm';
 export { CopyrightFooter } from './UI/CopyrightFooter/CopyrightFooter';

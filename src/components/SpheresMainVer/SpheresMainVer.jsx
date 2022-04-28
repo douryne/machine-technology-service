@@ -19,7 +19,7 @@ export const SpheresMainVer = () => {
                 cardUrl={card.image}
                 cardTitle={card.title}
                 cardText={card.text}
-                cardRoute={card.route}
+                cardRoute='/application'
               />
             </div>
           ))

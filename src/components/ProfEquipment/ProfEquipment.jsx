@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProfEquipment.css';
 import { Link } from 'react-router-dom';
-import { BlueTitle } from '..';
+import { Button, BlueTitle } from '..';
 import { equipmentList } from '../../utils/equipmentList';
 
 export const ProfEquipment = () => {
@@ -33,8 +33,10 @@ export const ProfEquipment = () => {
           )}
         </ul>
         <hr className='equipment__list-line' />
-        <Link to='/application' className='equipment__list-button'>
-          Подробнее
+        <Link to='/equipment'>
+          <Button type='button' buttonStyle='btn--normal--dark-blue'>
+            Подробнее
+          </Button>
         </Link>
       </div>
     </section>
