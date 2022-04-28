@@ -1,5 +1,5 @@
 import React from 'react';
-import { PageTitle, SpheresAppVer, IndustriesList, GreyTitle } from '../../components';
+import { PageTitle, SpheresAppVer, IndustriesList, GreyTitle, ScrollToTopBtn } from '../../components';
 
 import classes from './ApplicationPage.module.css';
 
@@ -18,6 +18,7 @@ export const ApplicationPage = () => {
       <section className={classes.industries}>
         <IndustriesList />
       </section>
+      <ScrollToTopBtn />
     </div>
   );
 };

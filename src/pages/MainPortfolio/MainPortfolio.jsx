@@ -1,5 +1,5 @@
 import React from 'react';
-import { Panel, PageTitle } from '../../components';
+import { Panel, PageTitle, ScrollToTopBtn } from '../../components';
 
 import './MainPortfolio.css';
 
@@ -28,6 +28,7 @@ export const MainPortfolio = () => {
           </div>
         </div>
       </div>
+      <ScrollToTopBtn />
     </div>
   );
 };
