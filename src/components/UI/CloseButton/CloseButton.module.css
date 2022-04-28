@@ -1,20 +1,16 @@
 .removeBtn {
-  border: 1px solid #000122;
+  border: 1px solid var(--dark-blue-navbar-color);
   border-radius: 10px;
   display: flex;
   padding: 10px 0;
   justify-content: center;
   align-items: center;
-  color: #000122;
+  color: var(--dark-blue-navbar-color);
   background-color: transparent;
   transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
-/* .removeBtn::after {
-  content: '✖';
-} */
-
 .removeBtn:hover {
-  background-color: #000122;
-  color: white;
+  background-color: var(--dark-blue-navbar-color);
+  color: var(--white-main-color);
 }

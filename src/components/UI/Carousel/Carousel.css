@@ -7,7 +7,7 @@
 }
 
 .carousel__title {
-  color: #797979;
+  color: var(--grey-font-color);
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 200;

@@ -1,6 +1,6 @@
 .breadcrumbs {
-  background: #34495e;
-  color: #fff;
+  background: var(--blue-main-color);
+  color: var(--white-main-color);
   padding: 30px 0;
   margin-bottom: 40px;
 }
