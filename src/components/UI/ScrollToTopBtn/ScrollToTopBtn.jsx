@@ -4,15 +4,13 @@ import { FaArrowCircleUp } from 'react-icons/fa';
 
 import classes from './ScrollToTopBtn.module.css';
 import { useScrollBtn } from '../../../hooks/useScollBtn';
-import { useScroll } from '../../../hooks/useScroll';
 
 export const ScrollToTopBtn = () => {
   const [btnClass, setBtnClass] = useState('');
   const [windowOffSet, setWindowOffSet] = useState(window.pageYOffset);
   const offSet = 200;
 
-  useScroll(setWindowOffSet);
-  useScrollBtn(windowOffSet, offSet, setBtnClass);
+  useScrollBtn(windowOffSet, offSet, setBtnClass, setWindowOffSet);
 
   const scrollToTop = () => {
     scroll.scrollToTop();
