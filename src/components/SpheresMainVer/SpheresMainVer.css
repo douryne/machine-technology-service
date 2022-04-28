@@ -6,7 +6,7 @@
 }
 
 .sphereSection__title {
-  color: #797979;
+  color: var(--grey-font-color);
   font-size: 30px;
   font-weight: 300;
   text-transform: uppercase;

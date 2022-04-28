@@ -5,7 +5,7 @@
   z-index: 2;
   height: 100vh;
   padding: 10px 20px 0 20px;
-  background-color: #fff;
+  background-color: var(--white-main-color);
   display: flex;
   flex-direction: column;
   transform: translateX(250px);

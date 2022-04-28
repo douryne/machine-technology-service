@@ -1,7 +1,7 @@
 .footer {
-  background-color: #2C3E50;
+  background-color: var(--dark-blue-footer-color);
   padding: 15px 0;
-  color: white;
+  color: var(--white-main-color);
 }
 
 .content {
@@ -16,6 +16,6 @@
 }
 
 .link {
-  color: #bbbbbb;
+  color: var(--grey-font-color);
   margin: 0 10px;
 }

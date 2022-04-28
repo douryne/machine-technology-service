@@ -12,12 +12,12 @@
   width: calc(100% - 60px);
   height: calc(100% - 5px);
   z-index: 10;
-  background-color: #000;
+  background-color: var(--dark-blue-navbar-color);
   opacity: 0.35;
 }
 
 .mainSlider__title {
-  color: #fff;
+  color: var(--white-main-color);
   letter-spacing: 5px;
   font-size: 4vw;
   line-height: 1.428571429;

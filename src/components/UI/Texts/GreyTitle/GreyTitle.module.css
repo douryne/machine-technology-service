@@ -1,6 +1,5 @@
 .title {
-  color: #797979;
-  font-family: 'Lato', sans-serif;
+  color: var(--grey-font-color);
   line-height: 1.4;
   text-align: center;
 }

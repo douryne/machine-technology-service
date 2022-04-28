@@ -1,5 +1,5 @@
 .sphere-section {
-  background-color: hsl(0, 0%, 95%);
+  background-color: var(--grey-bg-color);
   align-items: center;
   display: flex;
   flex-direction: column;

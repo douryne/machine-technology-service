@@ -1,4 +1,4 @@
 .title {
-  color: #475168;
+  color: var(--blue-main-color);
   font-weight: bold;
 }
