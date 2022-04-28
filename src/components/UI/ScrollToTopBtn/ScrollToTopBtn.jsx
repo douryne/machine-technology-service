@@ -1,27 +1,18 @@
-import React, { useEffect, useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import { FaArrowCircleUp } from 'react-icons/fa';
 
 import classes from './ScrollToTopBtn.module.css';
+import { useScrollBtn } from '../../../hooks/useScollBtn';
+import { useScroll } from '../../../hooks/useScroll';
 
 export const ScrollToTopBtn = () => {
   const [btnClass, setBtnClass] = useState('');
   const [windowOffSet, setWindowOffSet] = useState(window.pageYOffset);
   const offSet = 200;
 
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      setWindowOffSet(window.pageYOffset);
-    });
-  }, []);
-
-  useMemo(() => {
-    if (windowOffSet < offSet) {
-      setBtnClass('deactivate');
-    } else {
-      setBtnClass('activate');
-    }
-  }, [windowOffSet]);
+  useScroll(setWindowOffSet);
+  useScrollBtn(windowOffSet, offSet, setBtnClass);
 
   const scrollToTop = () => {
     scroll.scrollToTop();
