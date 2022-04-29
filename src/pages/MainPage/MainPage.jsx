@@ -12,7 +12,7 @@ import {
 export const MainPage = () => {
   return (
     <div>
-      <MainSlider />
+      <Preview />
       <SpheresMainVer />
       <ProfEquipment />
       <CarouselComponent />

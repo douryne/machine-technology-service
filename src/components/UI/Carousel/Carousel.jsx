@@ -9,10 +9,10 @@ import './Carousel.css';
 export const CarouselComponent = () => {
   const images = carouselImages;
   return (
-    <section className='carousel'>
+    <section className='carousel-component'>
       <h2 className='carousel__title'>ФОТОГАЛЕРЕЯ. ТЕХНИЧЕСКОЕ ОСНАЩЕНИЕ </h2>
       <div className='carousel__container'>
-        <Carousel showStatus={false} showArrows={false} autoPlay interval={5000} infiniteLoop emulateTouch>
+        <Carousel showStatus={false} showArrows autoPlay interval={5000} infiniteLoop emulateTouch>
           {images.length ? (
             images.map((image) => <img key={image} src={image} alt='someImage' />)
           ) : (
