@@ -1,13 +1,11 @@
 import React from 'react';
 import './ContactsPage.css';
-import { ContactsPlateGroup, ContactsForm } from '../../components';
+import { ContactsPlateGroup, ContactsForm, PageTitle } from '../../components';
 
 export const ContactsPage = () => {
   return (
     <section className='contactsPage'>
-      <div className='contactsPage__title-container'>
-        <h3 className='contactsPage__title'>контакты</h3>
-      </div>
+      <PageTitle>Контакты</PageTitle>
       <div className='contactsPage__content'>
         <ContactsPlateGroup />
         <ContactsForm />

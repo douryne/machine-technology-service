@@ -1,13 +1,17 @@
 import React from 'react';
-import './ProfEquipment.css';
 import { Link } from 'react-router-dom';
 import { BlueTitle } from '..';
 import { equipmentList } from '../../utils/equipmentList';
+import { useAnimations } from '../../hooks/useAnimations';
+
+import './ProfEquipment.css';
 
 export const ProfEquipment = () => {
+  useAnimations();
+
   const texts = equipmentList;
   return (
-    <section className='equipment'>
+    <section data-aos='fade-right' className='equipment'>
       <div className='equipment__video-container'>
         <iframe
           className='equipment__video-frame'

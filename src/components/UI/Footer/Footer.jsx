@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CopyrightFooter, BlueTitle } from '../..';
+import { useAnimations } from '../../../hooks/useAnimations';
 
 import './Footer.css';
 
@@ -14,6 +15,8 @@ export const Footer = () => {
     { title: 'Контакты', link: '/contacts' },
   ];
 
+  useAnimations();
+
   return (
     <div className='footer-wrapper'>
       <footer className='footer'>
@@ -24,6 +27,7 @@ export const Footer = () => {
               data-wow-duration='2s'
               data-wow-delay='.1s'
               style={{ width: '50%' }}
+              data-aos='fade-right'
             >
               <h1>КОНТАКТЫ</h1>
               <address>
@@ -48,7 +52,7 @@ export const Footer = () => {
               </address>
             </div>
 
-            <div className='col-lg-3 col-sm-3 nav-wrapper'>
+            <div data-aos='fade-left' className='col-lg-3 col-sm-3 nav-wrapper'>
               <div className='page-footer wow fadeInUp' data-wow-duration='2s' data-wow-delay='.5s'>
                 <h1>меню</h1>
                 <ul className='page-footer-list'>
