@@ -13,6 +13,7 @@ export { ContactsForm } from './UI/ContactsForm/ContactsForm';
 export { CopyrightFooter } from './UI/CopyrightFooter/CopyrightFooter';
 export { CloseButton } from './UI/CloseButton/CloseButton';
 export { BurgerMenu } from './UI/BurgerMenu/BurgerMenu';
+export { ScrollToTopBtn } from './UI/ScrollToTopBtn/ScrollToTopBtn';
 
 // INDEPENDENT COMPONENTS
 export { SpheresMainVer } from './SpheresMainVer/SpheresMainVer';
