@@ -1,9 +1,9 @@
 .contactsBtn {
-    background-color: #37bc9b;
+    background-color: var(--aquamarine-main-color);
     border: none;
     border-radius: 3px;
     font-weight: normal;
-    color: #fff;
+    color: var(--white-main-color);
     font-family: inherit;
     font-size: 14px;
     line-height: 1.428571429;
@@ -14,10 +14,10 @@
     margin-left: 20px;
     width: fit-content;
     text-transform: uppercase;
+    transition: background-color .2s ease-in-out;
 }
 
 .contactsBtn:hover {
     text-decoration: none;
-    color: #fff;
-    background-color: orange;
+    background-color: var(--orange-main-color);
   }

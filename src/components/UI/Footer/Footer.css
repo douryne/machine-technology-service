@@ -6,8 +6,8 @@
 }
 
 .footer {
-  background: #34495e;
-  color: #fff;
+  background: var(--blue-main-color);
+  color: var(--white-main-color);
   padding: 50px 0;
   width: 100%;
   font-weight: 300;
@@ -22,7 +22,7 @@
 }
 
 .footer address a {
-  color: orange
+  color: var(--orange-main-color);
 }
 
 .nav-wrapper {
@@ -41,13 +41,13 @@ ul.page-footer-list li {
 }
 
 ul.page-footer-list a {
-  color: #fff;
+  color: var(--white-main-color);
   text-decoration: none;
   transition: color .2s ease-in-out;
 }
 
 ul.page-footer-list a:hover {
-  color: orange;
+  color: var(--orange-main-color);
 }
 
 ul.page-footer-list li i {

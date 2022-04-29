@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('./colors.css');
 
 body {
   font-family: 'Inter', sans-serif !important;
@@ -19,31 +20,21 @@ a:focus {
 }
 
 ::selection {
-  background: orange;
-  color: #fff;
+  background: var(--orange-main-color);
+  color: var(--white-main-color);
 }
 
 ::-moz-selection {
-  background: orange;
-  color: #fff;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* font-family: 'Lato', sans-serif; */
-  font-family: 'Open Sans', sans-serif;
+  background: var(--orange-main-color);
+  color: var(--white-main-color);
 }
 
 a {
-  color: #444e67
+  color: var(--blue-main-color);
 }
 
 a:hover {
-  color: orange
+  color: var(--orange-main-color);
 }
 
 p {
