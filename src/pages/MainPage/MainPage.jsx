@@ -1,7 +1,7 @@
 import './MainPage.css';
 import React from 'react';
 import {
-  MainSlider,
+  Preview,
   SpheresMainVer,
   ProfEquipment,
   CarouselComponent,

@@ -6,6 +6,7 @@ import emailjs from 'emailjs-com';
 import { FormInput } from '../FormInput/FormInput';
 import '../FormInput/FormInput.css';
 import { Button } from '../Button/Button';
+import { useAnimations } from '../../../hooks/useAnimations';
 
 export const ContactsForm = () => {
   function handleSubmit(e) {
@@ -20,8 +21,10 @@ export const ContactsForm = () => {
     e.target.reset();
   }
 
+  useAnimations();
+
   return (
-    <form className='contactsForm' onSubmit={handleSubmit}>
+    <form data-aos='fade-left' className='contactsForm' onSubmit={handleSubmit}>
       <h3 className='contactsForm__title'>Отправьте сообщение, и наши менеджеры Вам перезвонят</h3>
       <FormInput label='ФИО' type='text' name='user_name' />
       <FormInput label='Email' type='email' name='user_email' />

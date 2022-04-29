@@ -4,16 +4,13 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { BlueTitle } from '../..';
 import { factoryImg } from '../../../utils/factoryImg';
+import { useAnimations } from '../../../hooks/useAnimations';
 
 export const Preview = () => {
   const images = factoryImg;
+  useAnimations();
   return (
-    <section className='preview'>
-      {/* <div className='mainSlider__overlay' /> */}
-      {/* <h2 className='mainSlider__title'>
-        <span>Наш завод строит заводы</span>
-      </h2> */}
-
+    <section data-aos='zoom-in' className='preview'>
       <Carousel
         showStatus={false}
         dynamicHeight={false}

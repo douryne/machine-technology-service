@@ -1,10 +1,13 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
+import { useAnimations } from '../../../hooks/useAnimations';
+
 import './ContactsPlate.css';
 
 export const ContactsPlate = (props) => {
+  useAnimations();
   return (
-    <div className='contactsPlate'>
+    <div data-aos='fade-right' className='contactsPlate'>
       <h4 className='contactsPlate__title'>
         {props.title}
         {props.element}

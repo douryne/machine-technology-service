@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useAnimations } from '../../../hooks/useAnimations';
+
 import './SphereCardMainVer.css';
 
 export const SphereCardMainVer = ({ cardUrl, cardTitle, cardText, cardRoute }) => {
+  useAnimations();
+
   return (
-    <article className='sphereCard'>
+    <article data-aos='fade-up' className='sphereCard'>
       <img src={cardUrl} alt={cardTitle} className='sphereCard__image' />
       <div>
         <h3 className='sphereCard__title'>{cardTitle}</h3>

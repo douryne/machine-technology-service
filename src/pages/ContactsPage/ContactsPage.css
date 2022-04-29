@@ -6,22 +6,6 @@
   margin: 40px auto;
 }
 
-.contactsPage__title-container {
-  width: 100%;
-  background-color: var(--blue-main-color);
-  padding: 30px 155px;
-  margin: 0 0 40px;
-}
-
-.contactsPage__title {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.1;
-  color: var(--white-main-color);
-  text-transform: uppercase;
-  margin: 0 auto;
-}
-
 .contactsPage__content {
   display: flex;
   flex-direction: row;

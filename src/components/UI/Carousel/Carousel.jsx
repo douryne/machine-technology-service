@@ -3,13 +3,16 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { carouselImages } from '../../../utils/carouselImg';
 import { BlueTitle } from '../..';
+import { useAnimations } from '../../../hooks/useAnimations';
 
 import './Carousel.css';
 
 export const CarouselComponent = () => {
   const images = carouselImages;
+  useAnimations();
+
   return (
-    <section className='carousel-component'>
+    <section data-aos='zoom-in' className='carousel-component'>
       <h2 className='carousel__title'>ФОТОГАЛЕРЕЯ. ТЕХНИЧЕСКОЕ ОСНАЩЕНИЕ </h2>
       <div className='carousel__container'>
         <Carousel showStatus={false} showArrows autoPlay interval={5000} infiniteLoop emulateTouch>

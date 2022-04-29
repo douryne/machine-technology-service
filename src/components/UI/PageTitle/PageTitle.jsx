@@ -1,10 +1,12 @@
 import React from 'react';
+import { useAnimations } from '../../../hooks/useAnimations';
 
 import './PageTitle.css';
 
 export const PageTitle = ({ children }) => {
+  useAnimations();
   return (
-    <div className='breadcrumbs'>
+    <div data-aos='fade-right' className='breadcrumbs'>
       <div className='container'>
         <div className='row'>
           <div className='col-lg-4 col-sm-4'>
