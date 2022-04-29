@@ -1,6 +1,13 @@
 import './MainPage.css';
 import React from 'react';
-import { MainSlider, SpheresMainVer, ProfEquipment, CarouselComponent, AboutProject } from '../../components';
+import {
+  MainSlider,
+  SpheresMainVer,
+  ProfEquipment,
+  CarouselComponent,
+  AboutProject,
+  ScrollToTopBtn,
+} from '../../components';
 
 export const MainPage = () => {
   return (
@@ -10,6 +17,7 @@ export const MainPage = () => {
       <ProfEquipment />
       <CarouselComponent />
       <AboutProject />
+      <ScrollToTopBtn />
     </div>
   );
 };
