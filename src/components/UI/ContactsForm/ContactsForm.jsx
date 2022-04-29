@@ -4,10 +4,9 @@ import React from 'react';
 import './ContactsForm.css';
 import emailjs from 'emailjs-com';
 import { FormInput } from '../FormInput/FormInput';
-import { ContactsBtn } from '../ContactsBtn/ContactsBtn';
-import { useAnimations } from '../../../hooks/useAnimations';
-
 import '../FormInput/FormInput.css';
+import { Button } from '../Button/Button';
+import { useAnimations } from '../../../hooks/useAnimations';
 
 export const ContactsForm = () => {
   function handleSubmit(e) {
@@ -39,9 +38,9 @@ export const ContactsForm = () => {
         className='formInput__input'
         style={{ height: '130px' }}
       />
-      <div style={{ marginLeft: '-20px' }}>
-        <ContactsBtn type='submit' text='Отправтиь' />
-      </div>
+      <Button type='submit' buttonStyle='btn--bold--green'>
+        Отправить
+      </Button>
     </form>
   );
 };

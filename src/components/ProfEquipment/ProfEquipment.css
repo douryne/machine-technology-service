@@ -106,7 +106,7 @@
 
 @media screen and (max-width: 570px) {
   .equipment {
-    padding: 50px 0;
+    padding: 50px 20px;
   }
 
   .equipment__video-container {
@@ -119,7 +119,7 @@
   }
 
   .equipment__list {
-    padding: 0 0 0 20px;
+    padding: 0
   }
 
   .equipment__list-title {
@@ -127,7 +127,7 @@
   }
 
   .equipment__list-line {
-    width: 90%;
+    width: 100%;
   }
 
   .equipment__list-item {

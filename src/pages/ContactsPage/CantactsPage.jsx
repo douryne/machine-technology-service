@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContactsPage.css';
-import { ContactsPlateGroup, ContactsForm, PageTitle } from '../../components';
+import { ContactsPlateGroup, ContactsForm, PageTitle, ScrollToTopBtn } from '../../components';
 
 export const ContactsPage = () => {
   return (
@@ -10,6 +10,7 @@ export const ContactsPage = () => {
         <ContactsPlateGroup />
         <ContactsForm />
       </div>
+      <ScrollToTopBtn />
     </section>
   );
 };
