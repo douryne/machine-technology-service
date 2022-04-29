@@ -1,8 +1,20 @@
-.mainSlider {
-  max-width: 1280px !important;
+.preview {
+  width: 100%;
   margin: 40px auto 60px;
-  padding: 0 30px;
-  position: relative;
+  height: 355px;
+  padding: 0;
+}
+
+.carousel .slider-wrapper .slide {
+  height: 355px;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .mainSlider__overlay {
@@ -35,4 +47,25 @@
   -webkit-animation: scroll 15s infinite linear;
   -moz-animation: scroll 15s infinite linear;
   animation: scroll 15s infinite linear;
+}
+
+@media screen and (max-width: 800px) {
+  .preview {
+    height: 250px;
+  }
+
+  .carousel .slider-wrapper .slide {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .preview {
+    height: 150px;
+    margin: 30px auto 0;
+  }
+
+  .carousel .slider-wrapper .slide {
+    height: 150px;
+  }
 }

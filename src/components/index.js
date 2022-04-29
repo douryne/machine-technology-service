@@ -4,7 +4,7 @@ export { Footer } from './UI/Footer/Footer';
 export { Panel } from './UI/Panel/Panel';
 export { PageTitle } from './UI/PageTitle/PageTitle';
 export { SliderItem } from './UI/Slider/SliderItem';
-export { MainSlider } from './UI/MainSlider/MainSlider';
+export { Preview } from './UI/Preview/Preview';
 export { CarouselComponent } from './UI/Carousel/Carousel';
 export { ContactsPlate } from './UI/ContactsPlate/ContactsPlate';
 export { Button } from './UI/Button/Button';

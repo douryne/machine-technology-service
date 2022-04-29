@@ -33,7 +33,7 @@ export const ProfEquipment = () => {
           )}
         </ul>
         <hr className='equipment__list-line' />
-        <Link to='/equipment'>
+        <Link to='/equipment' className='equipment__link'>
           <Button type='button' buttonStyle='btn--normal--dark-blue'>
             Подробнее
           </Button>
