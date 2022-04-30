@@ -33,6 +33,29 @@
       float: none;
 
   }
+
+  #lang {
+      top: 15px;
+      left: initial;
+      right: 15px;
+      visibility: visible;
+  }
+
+  .invisible {
+    visibility: hidden !important;
+  }
+
+  #lang ul {
+    flex-direction: row;
+  }
+
+  #lang li {
+      margin: 0 5px;
+  }
+
+  #lang a {
+      opacity: 1;
+  }
 }
 
 
