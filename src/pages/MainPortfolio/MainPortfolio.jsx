@@ -8,12 +8,8 @@ export const MainPortfolio = () => {
   return (
     <div>
       <PageTitle>НАШЕ ПОРТФОЛИО</PageTitle>
-      <div className='row'>
-        <div className='col-md-12'>
-          <div className='container'>
-            <Panels headings={portfolioPanelsContent} content={<SliderItem />} />
-          </div>
-        </div>
+      <div className='container'>
+        <Panels headings={portfolioPanelsContent} content={<SliderItem />} />
       </div>
       <ScrollToTopBtn />
     </div>
