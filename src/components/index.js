@@ -1,7 +1,6 @@
 // UI COMPONENTS
 export { Navbar } from './UI/Navbar/Navbar';
 export { Footer } from './UI/Footer/Footer';
-export { Panel } from './UI/Panel/Panel';
 export { PageTitle } from './UI/PageTitle/PageTitle';
 export { SliderItem } from './UI/Slider/SliderItem';
 export { Preview } from './UI/Preview/Preview';
@@ -14,6 +13,8 @@ export { CopyrightFooter } from './UI/CopyrightFooter/CopyrightFooter';
 export { CloseButton } from './UI/CloseButton/CloseButton';
 export { BurgerMenu } from './UI/BurgerMenu/BurgerMenu';
 export { ScrollToTopBtn } from './UI/ScrollToTopBtn/ScrollToTopBtn';
+export { Panels } from './UI/Panels/Panels';
+export { PanelComponent } from './UI/Panels/PanelComponent/PanelComponent';
 
 // INDEPENDENT COMPONENTS
 export { SpheresMainVer } from './SpheresMainVer/SpheresMainVer';

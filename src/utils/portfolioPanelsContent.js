@@ -1,0 +1,15 @@
+export const portfolioPanelsContent = [
+  { id: 1, title: '"AKFA". НАМАНГАН' },
+  { id: 2, title: 'ЗАВОД "KNAUF" В ФЕРГАНЕ' },
+  { id: 3, title: 'АНГРЕН. БУНКЕР ДЛЯ МОЮЩИХ СТРЕДСТВ' },
+  { id: 4, title: 'VEKTAN CHEMICAL' },
+  { id: 5, title: 'IES "Uzbekgidroqurilish" В ФЕРГАНЕ' },
+  { id: 6, title: 'ТУРКЕСТАНСКИЙ АЭРОПОРТ "YDA" В КАЗАХСТАНЕ' },
+  { id: 7, title: 'CП ООО "HIGN LAND CITY"(AKFA GROUP)' },
+  { id: 8, title: 'ООО "GREEN LINE PROFIL" (BENKAM)' },
+  { id: 9, title: 'ИП OOO "METAL INVENT"(ORIENT GROUP)' },
+  { id: 10, title: 'СП ООО "STARGATE SYSTEMS"(AKFA GROUP)' },
+  { id: 11, title: 'АО "UZBEKGIDROENERGOQURILISH"' },
+  { id: 12, title: 'КОМПАНИЯ-ЗАКАЗЧИК "SOFYA STROY". ЁМКОСТИ ДЛЯ КОМПАНИИ "ЛУКОЙЛ"' },
+  { id: 13, title: 'АО «NAVOIYAZOT» - ПРОИЗВОДИТЕЛЬ ХИМПРОДУКЦИИ' },
+];
