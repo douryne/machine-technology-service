@@ -60,9 +60,6 @@ export const Navbar = () => {
             <li id='languz'>
               <a href='indexuz.html' aria-label='languz' />
             </li>
-            <li id='langen'>
-              <a href='indexen.html' aria-label='langen' />
-            </li>
           </ul>
         </div>
 
