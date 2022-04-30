@@ -42,7 +42,6 @@ head-section {
   font-weight: 100;
   line-height: 30px;
   margin: 10px 0;
-  padding: 0;
 }
 
 .navbar-brand img {
@@ -57,6 +56,11 @@ head-section {
   float: right;
   margin-right: 0;
   z-index: 199;
+  padding: 20px 0;
+}
+
+.navbar-collapse {
+  margin: 0 auto !important;
 }
 
 .head-section .navbar-default {
@@ -95,7 +99,6 @@ ul.dropdown-menu {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .head-section .navbar {
