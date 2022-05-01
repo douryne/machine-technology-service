@@ -4,14 +4,14 @@ import { BlueTitle, PanelComponent, DescriptionText } from '../..';
 
 import classes from './Panels.module.css';
 
-export const Panels = ({ headings, content }) => {
+export const Panels = ({ content, children }) => {
   return (
     <PanelGroup className={classes.panelGroup} accordion>
-      {headings.length ? (
-        headings.map((heading) => (
-          <div data-aos='fade-right' key={heading.id || heading.title} className={classes.listItem}>
-            <PanelComponent title={heading.title}>
-              {content || <DescriptionText>{heading.text}</DescriptionText>}
+      {content.length ? (
+        content.map((panel) => (
+          <div data-aos='fade-right' key={panel.id || panel.title} className={classes.listItem}>
+            <PanelComponent title={panel.title}>
+              {children || <DescriptionText>{panel.text}</DescriptionText>}
             </PanelComponent>
           </div>
         ))

@@ -9,7 +9,9 @@ export const MainPortfolio = () => {
     <div>
       <PageTitle>НАШЕ ПОРТФОЛИО</PageTitle>
       <div className='container'>
-        <Panels headings={portfolioPanelsContent} content={<SliderItem />} />
+        <Panels content={portfolioPanelsContent}>
+          <SliderItem />
+        </Panels>
       </div>
       <ScrollToTopBtn />
     </div>
