@@ -1,6 +1,13 @@
+.footer-wrapper {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 .footer {
-  background: #34495e;
-  color: #fff;
+  background: var(--blue-main-color);
+  color: var(--white-main-color);
   padding: 50px 0;
   width: 100%;
   font-weight: 300;
@@ -15,21 +22,32 @@
 }
 
 .footer address a {
-  color: orange
+  color: var(--orange-main-color);
+}
+
+.nav-wrapper {
+  padding: 0 20px;
 }
 
 ul.page-footer-list {
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 ul.page-footer-list li {
-  line-height: 35px;
-  border-bottom: 1px dashed #636F79;
+  padding: 10px 0;
 }
 
 ul.page-footer-list a {
-  color: #fff
+  color: var(--white-main-color);
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+}
+
+ul.page-footer-list a:hover {
+  color: var(--orange-main-color);
 }
 
 ul.page-footer-list li i {

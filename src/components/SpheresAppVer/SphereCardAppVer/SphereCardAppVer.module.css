@@ -1,0 +1,21 @@
+.sphereCard {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: none;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.sphereCard__image {
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .sphereCard {
+    justify-content: center;
+  }
+  .sphereCard__content {
+    text-align: center;
+  }
+}

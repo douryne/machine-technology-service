@@ -1,0 +1,21 @@
+.footer {
+  background-color: var(--dark-blue-footer-color);
+  padding: 15px 0;
+  color: var(--white-main-color);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content span {
+  display: block;
+  margin: 0 10px;
+}
+
+.link {
+  color: var(--grey-font-color);
+  margin: 0 10px;
+}

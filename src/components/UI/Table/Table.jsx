@@ -1,10 +1,12 @@
 import React from 'react';
+import { useAnimations } from '../../../hooks/useAnimations';
 
 import './Table.css';
 
 export const Table = () => {
+  useAnimations();
   return (
-    <div className='gray-bg'>
+    <div data-aos='zoom-in' className='gray-bg'>
       <div className='fof'>
         <div className='container'>
           <table border='1' width='100%' height='600px'>

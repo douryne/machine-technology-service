@@ -1,19 +1,23 @@
 import './MainPage.css';
 import React from 'react';
-import { SphereSection } from '../../components/UI/SphereSection/SphereSection';
-import { ProfEquipment } from '../../components/UI/ProfEquipment/ProfEquipment';
-import { AboutProject } from '../../components/UI/AboutProject/AboutProject';
-import { MainSlider } from '../../components/UI/MainSlider/MainSlider';
-import { CarouselComponent } from '../../components/UI/Carousel/Carousel';
+import {
+  Preview,
+  SpheresMainVer,
+  ProfEquipment,
+  CarouselComponent,
+  AboutProject,
+  ScrollToTopBtn,
+} from '../../components';
 
 export const MainPage = () => {
   return (
-    <>
-      <MainSlider />
-      <SphereSection />
+    <div>
+      <Preview />
+      <SpheresMainVer />
       <ProfEquipment />
       <CarouselComponent />
       <AboutProject />
-    </>
+      <ScrollToTopBtn />
+    </div>
   );
 };

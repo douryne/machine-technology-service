@@ -1,0 +1,140 @@
+.equipment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.equipment__video-container {
+  margin: 0 100px 0 0;
+}
+
+.equipment__list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.equipment__video-frame {
+  width: 360px;
+  height: 400px;
+}
+
+.equipment__list-title {
+  color: var(--blue-main-color);
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+.equipment__list-line {
+  border: 1px solid var(--grey-border-color);
+  width: 100%;
+}
+
+.equipment__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.equipment__list-item {
+  color: var(--grey-font-color);
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 22px;
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.equipment__list-item:last-of-type {
+  margin: 0;
+}
+
+.equipment__list-item::before {
+  content: '\2714';
+  color: var(--orange-main-color);
+  font-size: 18px;
+  font-weight: bolder;
+  margin-right: 10px;
+}
+
+.equipment__list-button {
+  padding: 6px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: var(--white-main-color);
+  width: 115px;
+  height: 35px;
+  margin: 30px 0 0 0;
+  background-color: var(--blue-main-color);
+  border: none;
+  border-radius: 3px;
+  user-select: none;
+  transition: background-color .2s ease-in-out;
+}
+
+.equipment__list-button:hover {
+  text-decoration: none;
+  color: var(--white-bg-color);
+  cursor: pointer;
+  background-color: var(--orange-main-color);
+}
+
+@media screen and (max-width: 980px) {
+  .equipment {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  .equipment__video-container {
+    margin: 40px 0 0 0;
+  }
+
+  .equipment__list-title {
+    text-align: center;
+  }
+
+  .equipment__list-button {
+    margin: 15px auto 0;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .equipment {
+    padding: 50px 20px;
+  }
+
+  .equipment__video-container {
+    margin: 20px 0 0;
+  }
+
+  .equipment__video-frame {
+    width: 280px;
+    height: 300px;
+  }
+
+  .equipment__list {
+    padding: 0
+  }
+
+  .equipment__list-title {
+    font-size: 18px;
+  }
+
+  .equipment__list-line {
+    width: 100%;
+  }
+
+  .equipment__list-item {
+    font-size: 10px;
+  }
+
+  .equipment__list-button {
+    margin: 15px auto 0;
+  }
+}

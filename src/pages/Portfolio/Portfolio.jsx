@@ -1,12 +1,12 @@
 import React from 'react';
-import { Panel, Title } from '../../components';
+import { Panel, PageTitle, ScrollToTopBtn } from '../../components';
 
 import './Portfolio.css';
 
 export const Portfolio = () => {
   return (
     <div>
-      <Title>НАШЕ ПОРТФОЛИО</Title>
+      <PageTitle>НАШЕ ПОРТФОЛИО</PageTitle>
       <div className='row'>
         <div className='col-md-12'>
           <div className='container'>
@@ -28,6 +28,7 @@ export const Portfolio = () => {
           </div>
         </div>
       </div>
+      <ScrollToTopBtn />
     </div>
   );
 };

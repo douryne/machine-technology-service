@@ -1,0 +1,13 @@
+.breadcrumbs {
+  background: var(--blue-main-color);
+  color: var(--white-main-color);
+  padding: 30px 0;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.breadcrumbs h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 3px 0 0;
+  text-transform: uppercase;
+}
