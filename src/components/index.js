@@ -14,6 +14,7 @@ export { CopyrightFooter } from './UI/CopyrightFooter/CopyrightFooter';
 export { CloseButton } from './UI/CloseButton/CloseButton';
 export { BurgerMenu } from './UI/BurgerMenu/BurgerMenu';
 export { ScrollToTopBtn } from './UI/ScrollToTopBtn/ScrollToTopBtn';
+export { Table } from './UI/Table/Table';
 
 // INDEPENDENT COMPONENTS
 export { SpheresMainVer } from './SpheresMainVer/SpheresMainVer';

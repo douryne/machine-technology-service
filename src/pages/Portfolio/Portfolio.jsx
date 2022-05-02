@@ -1,9 +1,9 @@
 import React from 'react';
 import { Panel, PageTitle, ScrollToTopBtn } from '../../components';
 
-import './MainPortfolio.css';
+import './Portfolio.css';
 
-export const MainPortfolio = () => {
+export const Portfolio = () => {
   return (
     <div>
       <PageTitle>НАШЕ ПОРТФОЛИО</PageTitle>
