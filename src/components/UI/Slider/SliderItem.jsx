@@ -1,15 +1,10 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { useAnimations } from '../../../hooks/useAnimations';
+import { sliderImages } from '../../../utils/sliderImages';
+import { BlueTitle } from '../..';
 
 import './SliderItem.css';
-
-import img1 from '../../../assets/img/slider/1.jpg';
-import img2 from '../../../assets/img/slider/2.jpg';
-import img3 from '../../../assets/img/slider/3.jpg';
-import img4 from '../../../assets/img/slider/4.jpg';
-import img5 from '../../../assets/img/slider/5.jpg';
-import img6 from '../../../assets/img/slider/6.jpg';
-import { useAnimations } from '../../../hooks/useAnimations';
 
 export const SliderItem = () => {
   useAnimations();
@@ -24,24 +19,15 @@ export const SliderItem = () => {
 
   return (
     <Slider data-aos='zoom-in' {...settings}>
-      <div>
-        <img src={img1} alt='' />
-      </div>
-      <div>
-        <img src={img2} alt='' />
-      </div>
-      <div>
-        <img src={img3} alt='' />
-      </div>
-      <div>
-        <img src={img4} alt='' />
-      </div>
-      <div>
-        <img src={img5} alt='' />
-      </div>
-      <div>
-        <img src={img6} alt='' />
-      </div>
+      {sliderImages.length ? (
+        sliderImages.map((image) => (
+          <div>
+            <img src={image} alt='' />
+          </div>
+        ))
+      ) : (
+        <BlueTitle importance={1}>Что-то пошло не так</BlueTitle>
+      )}
     </Slider>
   );
 };

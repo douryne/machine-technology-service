@@ -2,6 +2,21 @@
   max-width: 100%;
   width: 100%;
 }
+
+.slick-dots {
+  padding: 5px 0;
+}
+
+.slick-next {
+  z-index: 200;
+  right: 5px;
+}
+
+.slick-prev {
+  left: 5px;
+  z-index: 200;
+}
+
 .slick-next:before, .slick-prev:before{
-  color: var(--dark-blue-navbar-color) !important;
+  color: var(--white-main-color) !important;
 }

@@ -1,0 +1,9 @@
+.panel {
+  width: 100%;
+  border: 1px solid var(--grey-border-color);
+  transition: border .2s ease-in-out;
+}
+
+.panel:hover {
+  border: 1.5px solid var(--orange-main-color);
+}
