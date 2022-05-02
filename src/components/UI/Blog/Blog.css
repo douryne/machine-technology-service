@@ -1,0 +1,25 @@
+.blog {
+  width: 48%;
+  margin: 0 auto;
+  border: 1px solid #eee;
+  margin-bottom: 30px;
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.blog-img img {
+  width: 100%;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+}
+.blog-content {
+  padding: 20px;
+}

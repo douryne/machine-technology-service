@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { MainPage, Portfolio, ApplicationPage, ContactsPage, OurReferences } from './pages';
+import { MainPage, Portfolio, ApplicationPage, ContactsPage, OurReferences, MainEquipment } from './pages';
 import { Navbar, Footer } from './components';
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
         <Routes>
           <Route path='/' element={<MainPage />} />
           <Route path='/info' element={<OurReferences />} />
+          <Route path='/equipment' element={<MainEquipment />} />
           <Route path='/portfolio' element={<Portfolio />} />
           <Route path='/application' element={<ApplicationPage />} />
           <Route path='/contacts' element={<ContactsPage />} />
