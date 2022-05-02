@@ -1,0 +1,11 @@
+html {
+  --grey-font-color: #797979;
+  --orange-main-color: orange;
+  --grey-border-color: #c7c7c7;
+  --white-main-color: #fff;
+  --blue-main-color: #34495e;
+  --dark-blue-footer-color: #2C3E50;
+  --dark-blue-navbar-color: #000122;
+  --aquamarine-main-color: #37bc9b;
+  --grey-bg-color: hsl(0, 0%, 95%);
+}

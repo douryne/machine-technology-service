@@ -1,0 +1,42 @@
+.btn {
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    width: fit-content;
+    transition: background-color .2s ease-in-out;
+}
+
+.btn:hover {
+    text-decoration: none;
+    background-color: var(--orange-main-color);
+}
+
+/* Button colors */
+
+.btn--normal--green {
+    color: var(--white-main-color);
+    background-color: var(--aquamarine-main-color);
+    font-weight: normal;
+}
+
+.btn--bold--green {
+    color: var(--white-main-color);
+    background-color: var(--aquamarine-main-color);
+    font-weight: bold;
+}
+
+.btn--normal--dark-blue {
+    color: var(--white-main-color);
+    background-color: var(--dark-blue-navbar-color);
+    font-weight: normal;
+}
+
+/* Button sizes */
+
+.btn--normal {
+    padding: 6px 12px;
+}

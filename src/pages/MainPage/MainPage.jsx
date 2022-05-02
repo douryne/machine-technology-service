@@ -1,7 +1,23 @@
 import './MainPage.css';
 import React from 'react';
-import { ProfEquipment } from '../../components/UI/ProfEquipment/ProfEquipment';
+import {
+  Preview,
+  SpheresMainVer,
+  ProfEquipment,
+  CarouselComponent,
+  AboutProject,
+  ScrollToTopBtn,
+} from '../../components';
 
 export const MainPage = () => {
-  return <ProfEquipment />;
+  return (
+    <div>
+      <Preview />
+      <SpheresMainVer />
+      <ProfEquipment />
+      <CarouselComponent />
+      <AboutProject />
+      <ScrollToTopBtn />
+    </div>
+  );
 };
