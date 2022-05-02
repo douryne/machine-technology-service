@@ -1,8 +1,8 @@
 import React from 'react';
-import { Panel, Title } from '../../components';
+import { Panel, PageTitle } from '../../components';
 import { Blog } from '../../components/UI/Blog/Blog';
 
-import './MainEquipment.css';
+import './Equipment.css';
 
 import img1 from '../../assets/img/slider/1.jpg';
 import img2 from '../../assets/img/slider/2.jpg';
@@ -15,7 +15,7 @@ import img8 from '../../assets/img/slider/8.jpg';
 import img9 from '../../assets/img/slider/9.jpg';
 import img10 from '../../assets/img/slider/10.jpg';
 
-export const MainEquipment = () => {
+export const Equipment = () => {
   const bloginfo = [
     {
       id: 1,
@@ -81,7 +81,7 @@ export const MainEquipment = () => {
 
   return (
     <div className='mainEquipment'>
-      <Title>ОБОРУДОВАНИЕ</Title>
+      <PageTitle>ОБОРУДОВАНИЕ</PageTitle>
       <div className='container'>
         <div className='mainEquipment-blog'>
           {bloginfo.map((blog) => (
