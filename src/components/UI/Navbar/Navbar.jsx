@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/img/logo.jpg';
 import { BurgerMenu, BlueTitle } from '../..';
@@ -19,8 +19,19 @@ export const Navbar = () => {
 
   const menuMinScreenWidth = 768;
   const [visible, setVisible] = useState(false);
+  const [langOpen, setLangOpen] = useState(true);
 
   useAutoCloseSidebar(menuMinScreenWidth, () => setVisible(false));
+
+  useEffect(() => {
+    if (visible) {
+      setTimeout(() => {
+        setLangOpen(false);
+      }, 1000);
+    } else if (!visible) {
+      setLangOpen(true);
+    }
+  });
 
   return (
     <header className='head-section'>
@@ -41,16 +52,13 @@ export const Navbar = () => {
             <img src={logo} align='left' alt='logo' />
           </a>
         </div>
-        <div id='lang'>
-          <ul>
+        <div id='lang' className={langOpen ? 'invisible' : ''}>
+          <ul className={!visible ? 'visible' : ''}>
             <li id='langruactive'>
               <a href='index.html' aria-label='langru' />
             </li>
             <li id='languz'>
               <a href='indexuz.html' aria-label='languz' />
-            </li>
-            <li id='langen'>
-              <a href='indexen.html' aria-label='langen' />
             </li>
           </ul>
         </div>

@@ -125,9 +125,10 @@ ul.dropdown-menu {
   height: 25px;
   position: fixed;
   z-index: 10;
-  top: 0px;
-  left: 50%;
+  top: 60px;
+  right: -10px;
   transform: translateX(-50%);
+  visibility: visible;
 }
 
 #lang ul {
@@ -137,7 +138,7 @@ ul.dropdown-menu {
 }
 
 #lang li {
-  width: 35px;
+  width: 25px;
   margin: 0 5px;
 }
 
@@ -147,6 +148,8 @@ ul.dropdown-menu {
   width: 100%;
   float: left;
   margin-right: 4px;
+  border-radius: 50%;
+  opacity: 0.5;
 }
 
 #langru a:link {
@@ -159,37 +162,26 @@ ul.dropdown-menu {
   background-position: top;
 }
 
-#langen a:link {
-  background: url('../../../assets/img/lang/langen.jpg');
-  background-position: top;
-}
-
 #langru a:hover {
   background: url('../../../assets/img/lang/langru.jpg');
   background-position: bottom;
+  opacity: 1;
 }
 
 #languz a:hover {
   background: url('../../../assets/img/lang/languz.jpg');
   background-position: bottom;
-}
-
-#langen a:hover {
-  background: url('../../../assets/img/lang/langen.jpg');
-  background-position: bottom;
+  opacity: 1;
 }
 
 #langruactive a {
   background: url('../../../assets/img/lang/langru.jpg');
   background-position: bottom;
+  opacity: 0.7;
 }
 
 #languzactive a {
   background: url('../../../assets/img/lang/languz.jpg');
   background-position: bottom;
-}
-
-#langenactive a {
-  background: url('../../../assets/img/lang/langen.jpg');
-  background-position: bottom;
+  opacity: 0.7;
 }

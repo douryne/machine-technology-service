@@ -1,8 +1,28 @@
+@media screen and (max-width: 1100px) {
+    .navbar {
+        width: 80%;
+    }
+
+    .navbar-brand img{
+        width: 90px;
+        height: 70px;
+    }
+
+    #lang {
+        top: 40px
+    }
+}
+
+
 @media (max-width: 768px) {
 
   .head-section .navbar-collapse  ul.navbar-nav {
       margin-left: 0;
   }
+
+  .navbar {
+    width: 100%;
+}
 
   .head-section .nav li a:hover,
   .head-section .nav li a:focus,
@@ -32,6 +52,20 @@
   .navbar-brand {
       float: none;
 
+  }
+
+  #lang {
+      top: 15px;
+      right: 70px;
+      visibility: visible;
+  }
+
+  .invisible {
+    visibility: hidden !important;
+  }
+
+  #lang a {
+      opacity: 1;
   }
 }
 
