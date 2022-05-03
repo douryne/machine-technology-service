@@ -5,6 +5,14 @@
   width: 490px;
 }
 
+.plate-link {
+  color: var(--grey-font-color);
+}
+
+.plate-link:hover {
+  color: var(--orange-main-color);
+}
+
 @media screen and (max-width: 800px) {
   .contactsPlateGroup {
     width: 300px;
