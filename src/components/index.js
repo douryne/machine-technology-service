@@ -31,3 +31,4 @@ export { AboutProject } from './AboutProject/AboutProject';
 export { BlueTitle } from './UI/Texts/BlueTitle/BlueTitle';
 export { DescriptionText } from './UI/Texts/DescriptionText/DescriptionText';
 export { GreyTitle } from './UI/Texts/GreyTitle/GreyTitle';
+export { Title } from './UI/Texts/Title/Title';
