@@ -30,8 +30,25 @@ export const ContactsPlateGroup = () => {
       />
       <ContactsPlate
         title='Телефоны'
-        text='(998 93) 500 65 32
-            (998&nbsp;94)&nbsp;624 68 75'
+        text={
+          <>
+            <a className='plate-link' href='tel:+998935006532'>
+              (998 93) 500 65 32
+            </a>
+            <br />
+            <a className='plate-link' href='tel:+998946246875'>
+              (998 94) 624 68 75
+            </a>
+          </>
+        }
+      />
+      <ContactsPlate
+        title='email'
+        text={
+          <a className='plate-link' href='mailto:dilshod.h84@gmail.com'>
+            dilshod.h84@gmail.com
+          </a>
+        }
       />
     </div>
   );

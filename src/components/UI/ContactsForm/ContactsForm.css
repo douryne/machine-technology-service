@@ -19,5 +19,7 @@
 @media screen and (max-width: 450px) {
   .contactsForm {
     width: 300px;
+    margin: 0;
+    padding: 0 15px;
   }
 }
